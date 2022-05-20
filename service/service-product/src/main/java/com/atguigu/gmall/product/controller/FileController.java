@@ -2,6 +2,8 @@ package com.atguigu.gmall.product.controller;
 
 import com.atguigu.gmall.common.result.Result;
 import com.atguigu.gmall.common.service.OssService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +18,7 @@ import java.io.InputStream;
  * @Description:
  * @date 2022/5/18 18:56
  */
+@Api("对象存储api接口")
 @Slf4j
 @RestController
 @RequestMapping("/admin/product")
@@ -24,6 +27,7 @@ public class FileController {
     @Autowired
     private OssService ossService;
 
+    @ApiOperation("文件上传")
     @PostMapping("/fileUpload")
     public Result upload(MultipartFile file) throws Exception {
         String filename = file.getOriginalFilename();

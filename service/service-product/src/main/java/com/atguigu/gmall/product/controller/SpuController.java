@@ -11,6 +11,9 @@ import com.atguigu.gmall.product.service.SpuInfoService;
 import com.atguigu.gmall.product.service.SpuSaleAttrService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +25,7 @@ import java.util.List;
  * @Description:
  * @date 2022/5/19 10:01
  */
+@Api("Spu属性相关接口")
 @RestController
 @RequestMapping("/admin/product")
 public class SpuController {
@@ -35,6 +39,7 @@ public class SpuController {
     @Autowired
     private SpuSaleAttrService spuSaleAttrService;
 
+    @ApiOperation("获取Spu信息分类列表")
     @GetMapping("/{page}/{limit}")
     public Result getSpuInfo(@PathVariable("page") Long page,
                              @PathVariable("limit") Long limit,
@@ -46,6 +51,7 @@ public class SpuController {
         return Result.ok(spuInfoPage);
     }
 
+    @ApiOperation("获取所有销售属性列表")
     @GetMapping("/baseSaleAttrList")
     public Result baseSaleAttrList() {
         List<BaseSaleAttr> list = baseSaleAttrService.list();
@@ -61,23 +67,25 @@ public class SpuController {
      * @param spuInfo
      * @return
      */
+    @ApiOperation("添加spu商品信息")
     @PostMapping("/saveSpuInfo")
-    public Result saveSpuInfo(@RequestBody SpuInfo spuInfo) {
+    public Result saveSpuInfo(@ApiParam("需要使用的spuInfo商品信息")@RequestBody SpuInfo spuInfo) {
         spuInfoService.saveSpuInfo(spuInfo);
         return Result.ok();
     }
 
+    @ApiOperation("获取spu图片列表")
     @GetMapping("/spuImageList/{spuId}")
-    public Result spuImageList(@PathVariable("spuId") Long spuId) {
+    public Result spuImageList(@ApiParam("spuInfo的主键id")@PathVariable("spuId") Long spuId) {
         QueryWrapper<SpuImage> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("spu_id",spuId);
         List<SpuImage> list = spuImageService.list(queryWrapper);
         return Result.ok(list);
     }
 
-
+    @ApiOperation("获取spu销售属性列表")
     @GetMapping("/spuSaleAttrList/{spuId}")
-    public Result spuSaleAttrList(@PathVariable("spuId") Long spuId){
+    public Result spuSaleAttrList(@ApiParam("spuInfo的主键id") @PathVariable("spuId") Long spuId){
         List<SpuSaleAttr> spuSaleAttrList = spuSaleAttrService.getSpuSaleAttrList(spuId);
         return Result.ok(spuSaleAttrList);
     }
