@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Api("分类相关的api接口")
+@Api(tags = "分类相关的api接口")
 @RestController
 @RequestMapping("/admin/product")
 public class ProductCategoryController {

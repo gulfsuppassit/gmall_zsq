@@ -10,9 +10,44 @@
             <result property="baseSaleAttrId" column="base_sale_attr_id" jdbcType="BIGINT"/>
             <result property="saleAttrName" column="sale_attr_name" jdbcType="VARCHAR"/>
     </resultMap>
+    <resultMap id="getSpuSaleAttrListMap" type="com.atguigu.gmall.model.product.SpuSaleAttr">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="spuId" column="spu_id" jdbcType="BIGINT"/>
+        <result property="baseSaleAttrId" column="base_sale_attr_id" jdbcType="BIGINT"/>
+        <result property="saleAttrName" column="sale_attr_name" jdbcType="VARCHAR"/>
+        <collection property="spuSaleAttrValueList"
+                    ofType="com.atguigu.gmall.model.product.SpuSaleAttrValue"
+                    autoMapping="true">
+            <id column="vid" property="id"/>
+            <result property="isChecked" column="isChecked"/>
+        </collection>
+    </resultMap>
 
     <sql id="Base_Column_List">
         id,spu_id,base_sale_attr_id,
         sale_attr_name
     </sql>
+    <select id="getSpuSaleAttrList" resultMap="getSpuSaleAttrListMap">
+        select ssa.*,ssav.id vid ,ssav.sale_attr_value_name sale_attr_value_name
+        from spu_sale_attr ssa
+        LEFT JOIN spu_sale_attr_value ssav
+        on ssa.sale_attr_name = ssav.sale_attr_name
+        and ssa.spu_id = ssav.spu_id
+        where ssa.spu_id = #{spuId}
+    </select>
+    <select id="getSpuSaleAttrAndValueBySkuId" resultMap="getSpuSaleAttrListMap">
+        select sku_av.sale_attr_value_id,ssa.*,ssav.id vid,ssav.sale_attr_value_name,IF(sku_av.sale_attr_value_id is NULL,'0','1') isChecked from sku_info si
+        LEFT JOIN spu_sale_attr ssa ON si.spu_id=ssa.spu_id
+        LEFT JOIN spu_sale_attr_value ssav ON ssa.spu_id=ssav.spu_id AND ssa.base_sale_attr_id = ssav.base_sale_attr_id
+        LEFT JOIN sku_sale_attr_value sku_av on sku_av.sku_id=si.id AND sku_av.sale_attr_value_id=ssav.id
+        where si.id=#{skuId}
+        ORDER BY ssa.base_sale_attr_id,ssav.id
+    </select>
+    <select id="getSkuValueJson" resultType="com.atguigu.gmall.model.to.ValueJsonDto">
+        select si2.id,GROUP_CONCAT(DISTINCT ssav.sale_attr_value_id ORDER BY ssav.sale_attr_value_id SEPARATOR '|') value_json from sku_info si
+        LEFT JOIN sku_info si2 ON si.spu_id=si2.spu_id
+        LEFT JOIN sku_sale_attr_value ssav ON si2.id=ssav.sku_id
+        where si.id=51 GROUP BY si2.id
+    </select>
+
 </mapper>

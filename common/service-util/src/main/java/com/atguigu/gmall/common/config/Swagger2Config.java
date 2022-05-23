@@ -28,7 +28,7 @@ public class Swagger2Config {
     public Docket webApiConfig(){
 
         //添加head参数start
-        List<Parameter> pars = new ArrayList<>();
+       /* List<Parameter> pars = new ArrayList<>();
         ParameterBuilder tokenPar = new ParameterBuilder();
         tokenPar.name("userId")
                 .description("用户ID")
@@ -47,7 +47,7 @@ public class Swagger2Config {
                 .parameterType("header")
                 .required(false)
                 .build();
-        pars.add(tmpPar.build());
+        pars.add(tmpPar.build());*/
         //添加head参数end
 
         return new Docket(DocumentationType.SWAGGER_2)
@@ -59,11 +59,11 @@ public class Swagger2Config {
                 //过滤掉所有error或error.*页面
                 //.paths(Predicates.not(PathSelectors.regex("/error.*")))
                 .build()
-                .globalOperationParameters(pars);
+               /* .globalOperationParameters(pars)*/;
 
     }
 
-    @Bean
+/*    @Bean
     public Docket adminApiConfig(){
 
         return new Docket(DocumentationType.SWAGGER_2)
@@ -74,7 +74,46 @@ public class Swagger2Config {
                 .paths(Predicates.and(PathSelectors.regex("/admin/.*")))
                 .build();
 
+    }*/
+
+    @Bean
+    public Docket productApiConfig(){
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(productApiInfo())
+                .select()
+                //只显示api路径下的页面
+                .paths(Predicates.and(PathSelectors.regex("/admin/product/.*")))
+                .build();
     }
+
+  /*  @Bean
+    public Docket productRpcApiConfig(){
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(productRpcApiInfo())
+                .select()
+                //只显示api路径下的页面
+                .paths(Predicates.and(PathSelectors.regex("/rpc/inner/.*")))
+                .build();
+    }*/
+
+    public ApiInfo productApiInfo(){
+        return new ApiInfoBuilder()
+                .title("产品接口-Api文档")
+                .description("本文档是所有后台管理的api接口文档")
+                .version("1.0")
+                .contact(new Contact("atguigu", "http://atguigu.com", "2356582790@qq.com"))
+                .build();
+    }
+
+    public ApiInfo productRpcApiInfo(){
+        return new ApiInfoBuilder()
+                .title("产品远程调用接口-Api文档")
+                .description("本文档是商品用于远程调用的api接口文档")
+                .version("1.0")
+                .contact(new Contact("atguigu", "http://atguigu.com", "2356582790@qq.com"))
+                .build();
+    }
+
 
     private ApiInfo webApiInfo(){
 
@@ -86,7 +125,7 @@ public class Swagger2Config {
                 .build();
     }
 
-    private ApiInfo adminApiInfo(){
+    /*private ApiInfo adminApiInfo(){
 
         return new ApiInfoBuilder()
                 .title("后台管理系统-API文档")
@@ -94,7 +133,7 @@ public class Swagger2Config {
                 .version("1.0")
                 .contact(new Contact("Helen", "http://atguigu.com", "55317332@qq.com"))
                 .build();
-    }
+    }*/
 
 
 }

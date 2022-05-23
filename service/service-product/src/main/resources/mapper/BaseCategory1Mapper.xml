@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.gmall.product.mapper.BaseCategory1Mapper">
+
+    <resultMap id="BaseResultMap" type="com.atguigu.gmall.model.product.BaseCategory1">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <resultMap id="CategoryAndChildToMap" type="com.atguigu.gmall.model.to.CategoryAndChildTo">
+        <id property="categoryId" column="id"/>
+        <id property="categoryName" column="name"/>
+        <collection property="categoryChild" ofType="com.atguigu.gmall.model.to.CategoryAndChildTo">
+            <id property="categoryId" column="c2id"/>
+            <id property="categoryName" column="c2name"/>
+            <collection property="categoryChild" ofType="com.atguigu.gmall.model.to.CategoryAndChildTo">
+                <id property="categoryId" column="c3id"/>
+                <id property="categoryName" column="c3name"/>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,category1_id
+    </sql>
+    <select id="getCategoryAndChild" resultMap="CategoryAndChildToMap">
+        select c1.*,c2.id c2id,c2.name c2name,c3.id c3id,c3.name c3name
+        from base_category1 c1
+        left join base_category2 c2 on c1.id = c2.category1_id
+        left join base_category3 c3 on c2.id = c3.category2_id
+    </select>
+    <select id="getCategoryView" resultType="com.atguigu.gmall.model.product.BaseCategoryView">
+        select bcv.* from sku_info si
+        LEFT JOIN base_category_view bcv ON si.category3_id = bcv.category3_id
+        where si.id=#{skuId}
+    </select>
+</mapper>

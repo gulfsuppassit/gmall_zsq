@@ -25,7 +25,7 @@ import java.util.List;
  * @Description:
  * @date 2022/5/19 10:01
  */
-@Api("Spu属性相关接口")
+@Api(tags = "Spu属性相关接口")
 @RestController
 @RequestMapping("/admin/product")
 public class SpuController {

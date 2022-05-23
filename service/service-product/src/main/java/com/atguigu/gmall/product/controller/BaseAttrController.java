@@ -5,6 +5,10 @@ import com.atguigu.gmall.model.product.BaseAttrInfo;
 import com.atguigu.gmall.model.product.BaseAttrValue;
 import com.atguigu.gmall.product.service.BaseAttrInfoService;
 import com.atguigu.gmall.product.service.BaseAttrValueService;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.conditions.query.QueryChainWrapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -15,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/admin/product")
-@Api("基础属性相关接口")
+@Api(tags = "基础属性相关接口")
 public class BaseAttrController {
 
     @Autowired

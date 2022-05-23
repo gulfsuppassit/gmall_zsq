@@ -18,7 +18,7 @@ import java.io.InputStream;
  * @Description:
  * @date 2022/5/18 18:56
  */
-@Api("对象存储api接口")
+@Api(tags = "对象存储api接口")
 @Slf4j
 @RestController
 @RequestMapping("/admin/product")

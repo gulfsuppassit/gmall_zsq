@@ -4,6 +4,7 @@ import com.atguigu.gmall.model.product.SpuSaleAttr;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
 * @author 86180
@@ -12,5 +13,14 @@ import java.util.List;
 */
 public interface SpuSaleAttrService extends IService<SpuSaleAttr> {
 
+    /**
+     * 获取spu销售属性列表
+     * @param spuId spuInfo表的主键
+     * @return spu销售属性列表
+     */
     List<SpuSaleAttr> getSpuSaleAttrList(Long spuId);
+
+    List<SpuSaleAttr> getSpuSaleAttrAndValueBySkuId(Long skuId);
+
+    Map<String,String> getValuesSkuJson(Long skuId);
 }

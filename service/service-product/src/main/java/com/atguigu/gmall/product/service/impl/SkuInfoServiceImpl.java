@@ -14,6 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
+import java.util.List;
+
 /**
 * @author 86180
 * @description 针对表【sku_info(库存单元表)】的数据库操作Service实现
@@ -34,45 +37,45 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoMapper, SkuInfo>
     @Override
     public void saveSkuInfo(SkuInfo skuInfo) {
         baseMapper.insert(skuInfo);
-        for (SkuAttrValue skuAttrValue : skuInfo.getSkuAttrValueList()) {
+        //保存sku属性值信息
+        List<SkuAttrValue> skuAttrValueList = skuInfo.getSkuAttrValueList();
+        for (SkuAttrValue skuAttrValue : skuAttrValueList) {
             skuAttrValue.setSkuId(skuInfo.getId());
-            skuAttrValueService.save(skuAttrValue);
         }
-        for (SkuSaleAttrValue skuSaleAttrValue : skuInfo.getSkuSaleAttrValueList()) {
+        skuAttrValueService.saveBatch(skuAttrValueList);
+        //保存sku销售属性值信息
+        List<SkuSaleAttrValue> skuSaleAttrValueList = skuInfo.getSkuSaleAttrValueList();
+        for (SkuSaleAttrValue skuSaleAttrValue : skuSaleAttrValueList) {
             skuSaleAttrValue.setSkuId(skuInfo.getId());
             skuSaleAttrValue.setSpuId(skuInfo.getSpuId());
-            skuSaleAttrValueService.save(skuSaleAttrValue);
         }
-        for (SkuImage skuImage : skuInfo.getSkuImageList()) {
+        skuSaleAttrValueService.saveBatch(skuSaleAttrValueList);
+        //保存sku图片信息
+        List<SkuImage> skuImageList = skuInfo.getSkuImageList();
+        for (SkuImage skuImage : skuImageList) {
             skuImage.setSkuId(skuInfo.getId());
-            skuImageService.save(skuImage);
         }
+        skuImageService.saveBatch(skuImageList);
     }
 
     /**
-     * 上架
+     * 上下架
      *
      * @param skuId
      */
     @Override
-    public void onSale(Long skuId) {
+    public void onSaleOrCancelSale(Long skuId,Integer status) {
         SkuInfo skuInfo = new SkuInfo();
         skuInfo.setId(skuId);
-        skuInfo.setIsSale(1);
+        skuInfo.setIsSale(status);
         baseMapper.updateById(skuInfo);
     }
 
-    /**
-     * 下架
-     * @param skuId
-     */
     @Override
-    public void cancelSale(Long skuId) {
-        SkuInfo skuInfo = new SkuInfo();
-        skuInfo.setId(skuId);
-        skuInfo.setIsSale(0);
-        baseMapper.updateById(skuInfo);
+    public BigDecimal getPrice(Long skuId) {
+        return baseMapper.getPrice(skuId);
     }
+
 }
 
 

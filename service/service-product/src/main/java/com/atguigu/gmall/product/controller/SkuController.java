@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
  * @Description:
  * @date 2022/5/19 11:34
  */
-@Api("sku相关api接口")
+@Api(tags = "sku相关api接口")
 @RestController
 @RequestMapping("/admin/product")
 public class SkuController {
@@ -40,14 +40,14 @@ public class SkuController {
     @ApiOperation("上架商品")
     @GetMapping("/onSale/{skuId}")
     public Result onSale(@PathVariable("skuId") Long skuId) {
-        skuInfoService.onSale(skuId);
+        skuInfoService.onSaleOrCancelSale(skuId,1);
         return Result.ok();
     }
 
     @ApiOperation("下架商品")
     @GetMapping("/cancelSale/{skuId}")
     public Result cancelSale(@PathVariable("skuId") Long skuId) {
-        skuInfoService.cancelSale(skuId);
+        skuInfoService.onSaleOrCancelSale(skuId,0);
         return Result.ok();
     }
 }

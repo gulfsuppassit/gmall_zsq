@@ -15,8 +15,10 @@
         <result property="attrName" column="attr_name" jdbcType="VARCHAR"/>
         <result property="categoryId" column="category_id" jdbcType="BIGINT"/>
         <result property="categoryLevel" column="category_level" jdbcType="INTEGER"/>
-        <collection property="attrValueList" ofType="com.atguigu.gmall.model.product.BaseAttrValue" autoMapping="true">
-            <id property="id" column="id" jdbcType="BIGINT"/>
+        <collection property="attrValueList"
+                    ofType="com.atguigu.gmall.model.product.BaseAttrValue"
+                    autoMapping="true">
+            <id property="id" column="aid" jdbcType="BIGINT"/>
         </collection>
     </resultMap>
 
@@ -36,7 +38,6 @@
             <if test="category3Id != null" >
                 or (bai.category_id = #{category3Id} and bai.category_level = 3)
             </if>
-
         </where>
     </select>
 </mapper>

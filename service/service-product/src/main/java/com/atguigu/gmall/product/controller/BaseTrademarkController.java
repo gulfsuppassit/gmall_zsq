@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
  * @Description: 操作品牌表
  * @date 2022/5/18 16:40
  */
-@Api("品牌相关的api接口")
+@Api(tags = "品牌相关的api接口")
 @RestController
 @RequestMapping("/admin/product")
 public class BaseTrademarkController {

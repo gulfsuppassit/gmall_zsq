@@ -1,6 +1,8 @@
 package com.atguigu.gmall.product.service.impl;
 
+import com.atguigu.gmall.model.product.SpuImage;
 import com.atguigu.gmall.model.product.SpuInfo;
+import com.atguigu.gmall.model.product.SpuSaleAttr;
 import com.atguigu.gmall.model.product.SpuSaleAttrValue;
 import com.atguigu.gmall.product.service.SpuImageService;
 import com.atguigu.gmall.product.service.SpuSaleAttrService;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
 * @author 86180
@@ -33,22 +36,24 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoMapper, SpuInfo>
     @Transactional
     @Override
     public void saveSpuInfo(SpuInfo spuInfo) {
+        //保存spuInfo基础信息
         baseMapper.insert(spuInfo);
-        spuInfo.getSpuImageList().forEach(item-> {
+        //保存spu图片信息
+        List<SpuImage> spuImageList = spuInfo.getSpuImageList();
+        spuImageList.forEach(item-> item.setSpuId(spuInfo.getId()));
+        spuImageService.saveBatch(spuImageList);
+        //保存spu销售属性和属性值信息
+        List<SpuSaleAttr> spuSaleAttrList = spuInfo.getSpuSaleAttrList();
+        spuSaleAttrList.forEach(item->{
             item.setSpuId(spuInfo.getId());
-            spuImageService.save(item);
-        });
-        spuInfo.getSpuSaleAttrList().forEach(item->{
-            spuSaleAttrService.save(item);
-            for (SpuSaleAttrValue spuSaleAttrValue : item.getSpuSaleAttrValueList()) {
+            List<SpuSaleAttrValue> spuSaleAttrValueList = item.getSpuSaleAttrValueList();
+            for (SpuSaleAttrValue spuSaleAttrValue : spuSaleAttrValueList) {
                 spuSaleAttrValue.setSpuId(spuInfo.getId());
                 spuSaleAttrValue.setSaleAttrName(item.getSaleAttrName());
-                spuSaleAttrValueService.save(spuSaleAttrValue);
             }
+            spuSaleAttrValueService.saveBatch(spuSaleAttrValueList);
         });
-
-
-
+        spuSaleAttrService.saveBatch(spuSaleAttrList);
     }
 }
 

@@ -1,6 +1,8 @@
 package com.atguigu.gmall.product.config;
 
+import com.atguigu.gmall.common.annotation.EnableAppGlobalExceptionHander;
 import com.atguigu.gmall.common.annotation.EnableMinio;
+import com.atguigu.gmall.common.annotation.EnableSwagger2Api;
 import com.atguigu.gmall.common.config.MinioConfig;
 import com.atguigu.gmall.common.config.MybatisPlusConfig;
 import com.atguigu.gmall.common.config.Swagger2Config;
@@ -18,8 +20,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 //@ComponentScan(basePackages = "com.atguigu.gmall")
-@Import({MybatisPlusConfig.class, Swagger2Config.class})
+@Import({MybatisPlusConfig.class})
+@EnableAppGlobalExceptionHander
 @EnableMinio
+@EnableSwagger2Api
 @MapperScan(basePackages = "com.atguigu.gmall.product.mapper")
 public class ProductConfig {
 }
+
+
