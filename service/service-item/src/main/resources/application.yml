@@ -4,3 +4,13 @@ server:
 spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  redis:
+    host: 192.168.220.130
+    password: MewGulf1314
+
+app:
+  threadpool:
+    corePoolSize: 8
+    maximumPoolSize: 16
+    keepAliveTime: 1
+    queueNumber: 1000

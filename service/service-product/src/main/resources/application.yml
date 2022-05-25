@@ -8,6 +8,13 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 192.168.220.130
+    password: MewGulf1314
+    jedis:
+      pool:
+        max-active: 8
+        min-idle: 0
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
@@ -18,3 +25,8 @@ app:
     accessKey: admin
     secertKey: admin123456
     bucket: gmall
+  threadpool:
+    corePoolSize: 8
+    maximumPoolSize: 16
+    keepAliveTime: 1
+    queueNumber: 1000

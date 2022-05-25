@@ -1,12 +1,11 @@
 package com.atguigu.gmall.product.config;
 
-import com.atguigu.gmall.common.annotation.EnableAppGlobalExceptionHander;
-import com.atguigu.gmall.common.annotation.EnableMinio;
-import com.atguigu.gmall.common.annotation.EnableSwagger2Api;
-import com.atguigu.gmall.common.config.MinioConfig;
-import com.atguigu.gmall.common.config.MybatisPlusConfig;
-import com.atguigu.gmall.common.config.Swagger2Config;
-import com.atguigu.gmall.common.service.impl.OssServiceImpl;
+import com.atguigu.gmall.service.annotation.EnableAppGlobalExceptionHander;
+import com.atguigu.gmall.service.annotation.EnableMinio;
+import com.atguigu.gmall.service.annotation.EnableRedissonAndCache;
+import com.atguigu.gmall.service.annotation.EnableSwagger2Api;
+import com.atguigu.gmall.service.config.MybatisPlusConfig;
+import com.atguigu.gmall.service.config.ThreadPoolConfiguration;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -18,9 +17,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @date 2022/5/18 20:02
  */
 @Configuration
+@EnableRedissonAndCache
 @EnableTransactionManagement
 //@ComponentScan(basePackages = "com.atguigu.gmall")
-@Import({MybatisPlusConfig.class})
+@Import({MybatisPlusConfig.class, ThreadPoolConfiguration.class})
 @EnableAppGlobalExceptionHander
 @EnableMinio
 @EnableSwagger2Api

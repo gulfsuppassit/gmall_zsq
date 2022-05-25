@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author zsq
@@ -24,9 +26,20 @@ public class CategoryRpcController {
     @Autowired
     private BaseCategoryService baseCategoryService;
 
+    private Map<String,Object> cache = new HashMap<>();
+
     @GetMapping("/categorys")
     public Result<List<CategoryAndChildTo>> getCategoryAndChild() {
-       List<CategoryAndChildTo> list = baseCategoryService.getCategoryAndChild();
+        /**
+         * 方法一:用本地内存
+         */
+        /*if (cache.get("categorys") == null){
+            List<CategoryAndChildTo> list = baseCategoryService.getCategoryAndChild();
+            cache.put("categorys",list);
+        }
+        List<CategoryAndChildTo> list = (List<CategoryAndChildTo>) cache.get("categorys");*/
+        //方法二:整合redis
+        List<CategoryAndChildTo> list = baseCategoryService.getCategoryAndChild();
         return Result.ok(list);
     }
 

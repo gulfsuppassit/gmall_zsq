@@ -1,0 +1,6282 @@
+{
+  "code": 200,
+  "message": "成功",
+  "data": [
+    {
+      "categoryId": 1,
+      "categoryName": "图书、音像、电子书刊",
+      "categoryChild": [
+        {
+          "categoryId": 1,
+          "categoryName": "电子书刊",
+          "categoryChild": [
+            {
+              "categoryId": 1,
+              "categoryName": "电子书",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 2,
+              "categoryName": "网络原创",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 3,
+              "categoryName": "数字杂志",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 4,
+              "categoryName": "多媒体图书",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 2,
+          "categoryName": "音像",
+          "categoryChild": [
+            {
+              "categoryId": 5,
+              "categoryName": "音乐",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 6,
+              "categoryName": "影视",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 7,
+              "categoryName": "教育音像",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 3,
+          "categoryName": "英文原版",
+          "categoryChild": [
+            {
+              "categoryId": 8,
+              "categoryName": "少儿",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 9,
+              "categoryName": "商务投资",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 10,
+              "categoryName": "英语学习与考试",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 11,
+              "categoryName": "文学",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 12,
+              "categoryName": "传记",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 13,
+              "categoryName": "励志",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 4,
+          "categoryName": "文艺",
+          "categoryChild": [
+            {
+              "categoryId": 14,
+              "categoryName": "小说",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 15,
+              "categoryName": "文学",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 16,
+              "categoryName": "青春文学",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 17,
+              "categoryName": "传记",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 18,
+              "categoryName": "艺术",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 5,
+          "categoryName": "少儿",
+          "categoryChild": [
+            {
+              "categoryId": 19,
+              "categoryName": "少儿",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 20,
+              "categoryName": "0-2岁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 21,
+              "categoryName": "3-6岁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 22,
+              "categoryName": "7-10岁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 23,
+              "categoryName": "11-14岁",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 6,
+          "categoryName": "人文社科",
+          "categoryChild": [
+            {
+              "categoryId": 24,
+              "categoryName": "历史",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 25,
+              "categoryName": "哲学",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 26,
+              "categoryName": "国学",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 27,
+              "categoryName": "政治/军事",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 28,
+              "categoryName": "法律",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 29,
+              "categoryName": "人文社科",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 30,
+              "categoryName": "心理学",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 31,
+              "categoryName": "文化",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 32,
+              "categoryName": "社会科学",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 7,
+          "categoryName": "经管励志",
+          "categoryChild": [
+            {
+              "categoryId": 33,
+              "categoryName": "经济",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 34,
+              "categoryName": "金融与投资",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 35,
+              "categoryName": "管理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 36,
+              "categoryName": "励志与成功",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 8,
+          "categoryName": "生活",
+          "categoryChild": [
+            {
+              "categoryId": 37,
+              "categoryName": "生活",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 38,
+              "categoryName": "健身与保健",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 39,
+              "categoryName": "家庭与育儿",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 40,
+              "categoryName": "旅游",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 41,
+              "categoryName": "烹饪美食",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 9,
+          "categoryName": "科技",
+          "categoryChild": [
+            {
+              "categoryId": 42,
+              "categoryName": "工业技术",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 43,
+              "categoryName": "科普读物",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 44,
+              "categoryName": "建筑",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 45,
+              "categoryName": "医学",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 46,
+              "categoryName": "科学与自然",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 47,
+              "categoryName": "计算机与互联网",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 48,
+              "categoryName": "电子通信",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 10,
+          "categoryName": "教育",
+          "categoryChild": [
+            {
+              "categoryId": 49,
+              "categoryName": "中小学教辅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 50,
+              "categoryName": "教育与考试",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 51,
+              "categoryName": "外语学习",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 52,
+              "categoryName": "大中专教材",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 53,
+              "categoryName": "字典词典",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 11,
+          "categoryName": "港台图书",
+          "categoryChild": [
+            {
+              "categoryId": 54,
+              "categoryName": "艺术/设计/收藏",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 55,
+              "categoryName": "经济管理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 56,
+              "categoryName": "文化/学术",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 57,
+              "categoryName": "少儿",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 12,
+          "categoryName": "其他",
+          "categoryChild": [
+            {
+              "categoryId": 58,
+              "categoryName": "工具书",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 59,
+              "categoryName": "杂志/期刊",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 60,
+              "categoryName": "套装书",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 2,
+      "categoryName": "手机",
+      "categoryChild": [
+        {
+          "categoryId": 13,
+          "categoryName": "手机通讯",
+          "categoryChild": [
+            {
+              "categoryId": 61,
+              "categoryName": "手机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 62,
+              "categoryName": "对讲机",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 14,
+          "categoryName": "运营商",
+          "categoryChild": [
+            {
+              "categoryId": 63,
+              "categoryName": "合约机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 64,
+              "categoryName": "选号中心",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 65,
+              "categoryName": "装宽带",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 66,
+              "categoryName": "办套餐",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 15,
+          "categoryName": "手机配件",
+          "categoryChild": [
+            {
+              "categoryId": 67,
+              "categoryName": "移动电源",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 68,
+              "categoryName": "电池/移动电源",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 69,
+              "categoryName": "蓝牙耳机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 70,
+              "categoryName": "充电器/数据线",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 71,
+              "categoryName": "苹果周边",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 72,
+              "categoryName": "手机耳机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 73,
+              "categoryName": "手机贴膜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 74,
+              "categoryName": "手机存储卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 75,
+              "categoryName": "充电器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 76,
+              "categoryName": "数据线",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 77,
+              "categoryName": "手机保护套",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 78,
+              "categoryName": "车载配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 79,
+              "categoryName": "iPhone 配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 80,
+              "categoryName": "手机电池",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 81,
+              "categoryName": "创意配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 82,
+              "categoryName": "便携/无线音响",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 83,
+              "categoryName": "手机饰品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 84,
+              "categoryName": "拍照配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 85,
+              "categoryName": "手机支架",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 3,
+      "categoryName": "家用电器",
+      "categoryChild": [
+        {
+          "categoryId": 16,
+          "categoryName": "大 家 电",
+          "categoryChild": [
+            {
+              "categoryId": 86,
+              "categoryName": "平板电视",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 87,
+              "categoryName": "空调",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 88,
+              "categoryName": "冰箱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 89,
+              "categoryName": "洗衣机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 90,
+              "categoryName": "家庭影院",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 91,
+              "categoryName": "DVD/电视盒子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 92,
+              "categoryName": "迷你音响",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 93,
+              "categoryName": "冷柜/冰吧",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 94,
+              "categoryName": "家电配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 95,
+              "categoryName": "功放",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 96,
+              "categoryName": "回音壁/Soundbar",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 97,
+              "categoryName": "Hi-Fi专区",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 98,
+              "categoryName": "电视盒子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 99,
+              "categoryName": "酒柜",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 17,
+          "categoryName": "厨卫大电",
+          "categoryChild": [
+            {
+              "categoryId": 100,
+              "categoryName": "燃气灶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 101,
+              "categoryName": "油烟机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 102,
+              "categoryName": "热水器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 103,
+              "categoryName": "消毒柜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 104,
+              "categoryName": "洗碗机",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 18,
+          "categoryName": "厨房小电",
+          "categoryChild": [
+            {
+              "categoryId": 105,
+              "categoryName": "料理机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 106,
+              "categoryName": "榨汁机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 107,
+              "categoryName": "电饭煲",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 108,
+              "categoryName": "电压力锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 109,
+              "categoryName": "豆浆机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 110,
+              "categoryName": "咖啡机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 111,
+              "categoryName": "微波炉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 112,
+              "categoryName": "电烤箱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 113,
+              "categoryName": "电磁炉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 114,
+              "categoryName": "面包机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 115,
+              "categoryName": "煮蛋器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 116,
+              "categoryName": "酸奶机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 117,
+              "categoryName": "电炖锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 118,
+              "categoryName": "电水壶/热水瓶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 119,
+              "categoryName": "电饼铛",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 120,
+              "categoryName": "多用途锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 121,
+              "categoryName": "电烧烤炉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 122,
+              "categoryName": "果蔬解毒机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 123,
+              "categoryName": "其它厨房电器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 124,
+              "categoryName": "养生壶/煎药壶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 125,
+              "categoryName": "电热饭盒",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 19,
+          "categoryName": "生活电器",
+          "categoryChild": [
+            {
+              "categoryId": 126,
+              "categoryName": "取暖电器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 127,
+              "categoryName": "净化器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 128,
+              "categoryName": "加湿器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 129,
+              "categoryName": "扫地机器人",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 130,
+              "categoryName": "吸尘器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 131,
+              "categoryName": "挂烫机/熨斗",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 132,
+              "categoryName": "插座",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 133,
+              "categoryName": "电话机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 134,
+              "categoryName": "清洁机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 135,
+              "categoryName": "除湿机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 136,
+              "categoryName": "干衣机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 137,
+              "categoryName": "收录/音机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 138,
+              "categoryName": "电风扇",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 139,
+              "categoryName": "冷风扇",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 140,
+              "categoryName": "其它生活电器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 141,
+              "categoryName": "生活电器配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 142,
+              "categoryName": "净水器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 143,
+              "categoryName": "饮水机",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 20,
+          "categoryName": "个护健康",
+          "categoryChild": [
+            {
+              "categoryId": 144,
+              "categoryName": "剃须刀",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 145,
+              "categoryName": "剃/脱毛器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 146,
+              "categoryName": "口腔护理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 147,
+              "categoryName": "电吹风",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 148,
+              "categoryName": "美容器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 149,
+              "categoryName": "理发器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 150,
+              "categoryName": "卷/直发器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 151,
+              "categoryName": "按摩椅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 152,
+              "categoryName": "按摩器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 153,
+              "categoryName": "足浴盆",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 154,
+              "categoryName": "血压计",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 155,
+              "categoryName": "电子秤/厨房秤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 156,
+              "categoryName": "血糖仪",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 157,
+              "categoryName": "体温计",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 158,
+              "categoryName": "其它健康电器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 159,
+              "categoryName": "计步器/脂肪检测仪",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 21,
+          "categoryName": "五金家装",
+          "categoryChild": [
+            {
+              "categoryId": 160,
+              "categoryName": "电动工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 161,
+              "categoryName": "手动工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 162,
+              "categoryName": "仪器仪表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 163,
+              "categoryName": "浴霸/排气扇",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 164,
+              "categoryName": "灯具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 165,
+              "categoryName": "LED灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 166,
+              "categoryName": "洁身器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 167,
+              "categoryName": "水槽",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 168,
+              "categoryName": "龙头",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 169,
+              "categoryName": "淋浴花洒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 170,
+              "categoryName": "厨卫五金",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 171,
+              "categoryName": "家具五金",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 172,
+              "categoryName": "门铃",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 173,
+              "categoryName": "电气开关",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 174,
+              "categoryName": "插座",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 175,
+              "categoryName": "电工电料",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 176,
+              "categoryName": "监控安防",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 177,
+              "categoryName": "电线/线缆",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 4,
+      "categoryName": "数码",
+      "categoryChild": [
+        {
+          "categoryId": 22,
+          "categoryName": "摄影摄像",
+          "categoryChild": [
+            {
+              "categoryId": 178,
+              "categoryName": "数码相机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 179,
+              "categoryName": "单电/微单相机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 180,
+              "categoryName": "单反相机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 181,
+              "categoryName": "摄像机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 182,
+              "categoryName": "拍立得",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 183,
+              "categoryName": "运动相机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 184,
+              "categoryName": "镜头",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 185,
+              "categoryName": "户外器材",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 186,
+              "categoryName": "影棚器材",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 187,
+              "categoryName": "冲印服务",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 188,
+              "categoryName": "数码相框",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 23,
+          "categoryName": "数码配件",
+          "categoryChild": [
+            {
+              "categoryId": 189,
+              "categoryName": "存储卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 190,
+              "categoryName": "读卡器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 191,
+              "categoryName": "滤镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 192,
+              "categoryName": "闪光灯/手柄",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 193,
+              "categoryName": "相机包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 194,
+              "categoryName": "三脚架/云台",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 195,
+              "categoryName": "相机清洁/贴膜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 196,
+              "categoryName": "机身附件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 197,
+              "categoryName": "镜头附件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 198,
+              "categoryName": "电池/充电器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 199,
+              "categoryName": "移动电源",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 200,
+              "categoryName": "数码支架",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 24,
+          "categoryName": "智能设备",
+          "categoryChild": [
+            {
+              "categoryId": 201,
+              "categoryName": "智能手环",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 202,
+              "categoryName": "智能手表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 203,
+              "categoryName": "智能眼镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 204,
+              "categoryName": "运动跟踪器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 205,
+              "categoryName": "健康监测",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 206,
+              "categoryName": "智能配饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 207,
+              "categoryName": "智能家居",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 208,
+              "categoryName": "体感车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 209,
+              "categoryName": "其他配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 210,
+              "categoryName": "智能机器人",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 211,
+              "categoryName": "无人机",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 25,
+          "categoryName": "影音娱乐",
+          "categoryChild": [
+            {
+              "categoryId": 212,
+              "categoryName": "MP3/MP4",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 213,
+              "categoryName": "智能设备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 214,
+              "categoryName": "耳机/耳麦",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 215,
+              "categoryName": "便携/无线音箱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 216,
+              "categoryName": "音箱/音响",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 217,
+              "categoryName": "高清播放器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 218,
+              "categoryName": "收音机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 219,
+              "categoryName": "MP3/MP4配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 220,
+              "categoryName": "麦克风",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 221,
+              "categoryName": "专业音频",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 222,
+              "categoryName": "苹果配件",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 26,
+          "categoryName": "电子教育",
+          "categoryChild": [
+            {
+              "categoryId": 223,
+              "categoryName": "学生平板",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 224,
+              "categoryName": "点读机/笔",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 225,
+              "categoryName": "早教益智",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 226,
+              "categoryName": "录音笔",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 227,
+              "categoryName": "电纸书",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 228,
+              "categoryName": "电子词典",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 229,
+              "categoryName": "复读机",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 27,
+          "categoryName": "虚拟商品",
+          "categoryChild": [
+            {
+              "categoryId": 230,
+              "categoryName": "延保服务",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 231,
+              "categoryName": "杀毒软件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 232,
+              "categoryName": "积分商品",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 5,
+      "categoryName": "家居家装",
+      "categoryChild": [
+        {
+          "categoryId": 28,
+          "categoryName": "家纺",
+          "categoryChild": [
+            {
+              "categoryId": 233,
+              "categoryName": "桌布/罩件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 234,
+              "categoryName": "地毯地垫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 235,
+              "categoryName": "沙发垫套/椅垫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 236,
+              "categoryName": "床品套件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 237,
+              "categoryName": "被子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 238,
+              "categoryName": "枕芯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 239,
+              "categoryName": "床单被罩",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 240,
+              "categoryName": "毯子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 241,
+              "categoryName": "床垫/床褥",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 242,
+              "categoryName": "蚊帐",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 243,
+              "categoryName": "抱枕靠垫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 244,
+              "categoryName": "毛巾浴巾",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 245,
+              "categoryName": "电热毯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 246,
+              "categoryName": "窗帘/窗纱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 247,
+              "categoryName": "布艺软饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 248,
+              "categoryName": "凉席",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 29,
+          "categoryName": "灯具",
+          "categoryChild": [
+            {
+              "categoryId": 249,
+              "categoryName": "台灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 250,
+              "categoryName": "节能灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 251,
+              "categoryName": "装饰灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 252,
+              "categoryName": "落地灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 253,
+              "categoryName": "应急灯/手电",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 254,
+              "categoryName": "LED灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 255,
+              "categoryName": "吸顶灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 256,
+              "categoryName": "五金电器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 257,
+              "categoryName": "筒灯射灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 258,
+              "categoryName": "吊灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 259,
+              "categoryName": "氛围照明",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 30,
+          "categoryName": "生活日用",
+          "categoryChild": [
+            {
+              "categoryId": 260,
+              "categoryName": "保暖防护",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 261,
+              "categoryName": "收纳用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 262,
+              "categoryName": "雨伞雨具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 263,
+              "categoryName": "浴室用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 264,
+              "categoryName": "缝纫/针织用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 265,
+              "categoryName": "洗晒/熨烫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 266,
+              "categoryName": "净化除味",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 31,
+          "categoryName": "家装软饰",
+          "categoryChild": [
+            {
+              "categoryId": 267,
+              "categoryName": "相框/照片墙",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 268,
+              "categoryName": "装饰字画",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 269,
+              "categoryName": "节庆饰品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 270,
+              "categoryName": "手工/十字绣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 271,
+              "categoryName": "装饰摆件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 272,
+              "categoryName": "帘艺隔断",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 273,
+              "categoryName": "墙贴/装饰贴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 274,
+              "categoryName": "钟饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 275,
+              "categoryName": "花瓶花艺",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 276,
+              "categoryName": "香薰蜡烛",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 277,
+              "categoryName": "创意家居",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 32,
+          "categoryName": "宠物生活",
+          "categoryChild": [
+            {
+              "categoryId": 278,
+              "categoryName": "宠物主粮",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 279,
+              "categoryName": "宠物零食",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 280,
+              "categoryName": "医疗保健",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 281,
+              "categoryName": "家居日用",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 282,
+              "categoryName": "宠物玩具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 283,
+              "categoryName": "出行装备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 284,
+              "categoryName": "洗护美容",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 6,
+      "categoryName": "电脑办公",
+      "categoryChild": [
+        {
+          "categoryId": 33,
+          "categoryName": "电脑整机",
+          "categoryChild": [
+            {
+              "categoryId": 285,
+              "categoryName": "笔记本",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 286,
+              "categoryName": "超极本",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 287,
+              "categoryName": "游戏本",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 288,
+              "categoryName": "平板电脑",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 289,
+              "categoryName": "平板电脑配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 290,
+              "categoryName": "台式机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 291,
+              "categoryName": "服务器/工作站",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 292,
+              "categoryName": "笔记本配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 293,
+              "categoryName": "一体机",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 34,
+          "categoryName": "电脑配件",
+          "categoryChild": [
+            {
+              "categoryId": 294,
+              "categoryName": "CPU",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 295,
+              "categoryName": "主板",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 296,
+              "categoryName": "显卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 297,
+              "categoryName": "硬盘",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 298,
+              "categoryName": "SSD固态硬盘",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 299,
+              "categoryName": "内存",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 300,
+              "categoryName": "机箱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 301,
+              "categoryName": "电源",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 302,
+              "categoryName": "显示器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 303,
+              "categoryName": "刻录机/光驱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 304,
+              "categoryName": "散热器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 305,
+              "categoryName": "声卡/扩展卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 306,
+              "categoryName": "装机配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 307,
+              "categoryName": "组装电脑",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 35,
+          "categoryName": "外设产品",
+          "categoryChild": [
+            {
+              "categoryId": 308,
+              "categoryName": "移动硬盘",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 309,
+              "categoryName": "U盘",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 310,
+              "categoryName": "鼠标",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 311,
+              "categoryName": "键盘",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 312,
+              "categoryName": "鼠标垫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 313,
+              "categoryName": "摄像头",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 314,
+              "categoryName": "手写板",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 315,
+              "categoryName": "硬盘盒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 316,
+              "categoryName": "插座",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 317,
+              "categoryName": "线缆",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 318,
+              "categoryName": "UPS电源",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 319,
+              "categoryName": "电脑工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 320,
+              "categoryName": "游戏设备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 321,
+              "categoryName": "电玩",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 322,
+              "categoryName": "电脑清洁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 323,
+              "categoryName": "网络仪表仪器",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 36,
+          "categoryName": "游戏设备",
+          "categoryChild": [
+            {
+              "categoryId": 324,
+              "categoryName": "游戏机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 325,
+              "categoryName": "游戏耳机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 326,
+              "categoryName": "手柄/方向盘",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 327,
+              "categoryName": "游戏软件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 328,
+              "categoryName": "游戏周边",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 37,
+          "categoryName": "网络产品",
+          "categoryChild": [
+            {
+              "categoryId": 329,
+              "categoryName": "路由器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 330,
+              "categoryName": "网卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 331,
+              "categoryName": "交换机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 332,
+              "categoryName": "网络存储",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 333,
+              "categoryName": "4G/3G上网",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 334,
+              "categoryName": "网络盒子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 335,
+              "categoryName": "网络配件",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 38,
+          "categoryName": "办公设备",
+          "categoryChild": [
+            {
+              "categoryId": 336,
+              "categoryName": "投影机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 337,
+              "categoryName": "投影配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 338,
+              "categoryName": "多功能一体机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 339,
+              "categoryName": "打印机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 340,
+              "categoryName": "传真设备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 341,
+              "categoryName": "验钞/点钞机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 342,
+              "categoryName": "扫描设备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 343,
+              "categoryName": "复合机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 344,
+              "categoryName": "碎纸机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 345,
+              "categoryName": "考勤机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 346,
+              "categoryName": "收款/POS机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 347,
+              "categoryName": "会议音频视频",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 348,
+              "categoryName": "保险柜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 349,
+              "categoryName": "装订/封装机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 350,
+              "categoryName": "安防监控",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 351,
+              "categoryName": "办公家具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 352,
+              "categoryName": "白板",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 39,
+          "categoryName": "文具/耗材",
+          "categoryChild": [
+            {
+              "categoryId": 353,
+              "categoryName": "硒鼓/墨粉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 354,
+              "categoryName": "墨盒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 355,
+              "categoryName": "色带",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 356,
+              "categoryName": "纸类",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 357,
+              "categoryName": "办公文具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 358,
+              "categoryName": "学生文具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 359,
+              "categoryName": "财会用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 360,
+              "categoryName": "文件管理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 361,
+              "categoryName": "本册/便签",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 362,
+              "categoryName": "计算器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 363,
+              "categoryName": "笔类",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 364,
+              "categoryName": "画具画材",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 365,
+              "categoryName": "刻录碟片/附件",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 40,
+          "categoryName": "服务产品",
+          "categoryChild": [
+            {
+              "categoryId": 366,
+              "categoryName": "上门安装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 367,
+              "categoryName": "延保服务",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 368,
+              "categoryName": "维修保养",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 369,
+              "categoryName": "电脑软件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 370,
+              "categoryName": "京东服务",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 7,
+      "categoryName": "厨具",
+      "categoryChild": [
+        {
+          "categoryId": 41,
+          "categoryName": "烹饪锅具",
+          "categoryChild": [
+            {
+              "categoryId": 371,
+              "categoryName": "炒锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 372,
+              "categoryName": "煎锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 373,
+              "categoryName": "压力锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 374,
+              "categoryName": "蒸锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 375,
+              "categoryName": "汤锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 376,
+              "categoryName": "奶锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 377,
+              "categoryName": "锅具套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 378,
+              "categoryName": "煲类",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 379,
+              "categoryName": "水壶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 380,
+              "categoryName": "火锅",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 42,
+          "categoryName": "刀剪菜板",
+          "categoryChild": [
+            {
+              "categoryId": 381,
+              "categoryName": "菜刀",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 382,
+              "categoryName": "剪刀",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 383,
+              "categoryName": "刀具套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 384,
+              "categoryName": "砧板",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 385,
+              "categoryName": "瓜果刀/刨",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 386,
+              "categoryName": "多功能刀",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 43,
+          "categoryName": "厨房配件",
+          "categoryChild": [
+            {
+              "categoryId": 387,
+              "categoryName": "保鲜盒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 388,
+              "categoryName": "烘焙/烧烤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 389,
+              "categoryName": "饭盒/提锅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 390,
+              "categoryName": "储物/置物架",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 391,
+              "categoryName": "厨房DIY/小工具",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 44,
+          "categoryName": "水具酒具",
+          "categoryChild": [
+            {
+              "categoryId": 392,
+              "categoryName": "塑料杯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 393,
+              "categoryName": "运动水壶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 394,
+              "categoryName": "玻璃杯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 395,
+              "categoryName": "陶瓷/马克杯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 396,
+              "categoryName": "保温杯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 397,
+              "categoryName": "保温壶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 398,
+              "categoryName": "酒杯/酒具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 399,
+              "categoryName": "杯具套装",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 45,
+          "categoryName": "餐具",
+          "categoryChild": [
+            {
+              "categoryId": 400,
+              "categoryName": "餐具套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 401,
+              "categoryName": "碗/碟/盘",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 402,
+              "categoryName": "筷勺/刀叉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 403,
+              "categoryName": "一次性用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 404,
+              "categoryName": "果盘/果篮",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 46,
+          "categoryName": "酒店用品",
+          "categoryChild": [
+            {
+              "categoryId": 405,
+              "categoryName": "自助餐炉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 406,
+              "categoryName": "酒店餐具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 407,
+              "categoryName": "酒店水具",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 47,
+          "categoryName": "茶具/咖啡具",
+          "categoryChild": [
+            {
+              "categoryId": 408,
+              "categoryName": "整套茶具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 409,
+              "categoryName": "茶杯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 410,
+              "categoryName": "茶壶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 411,
+              "categoryName": "茶盘茶托",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 412,
+              "categoryName": "茶叶罐",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 413,
+              "categoryName": "茶具配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 414,
+              "categoryName": "茶宠摆件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 415,
+              "categoryName": "咖啡具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 416,
+              "categoryName": "其他",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 8,
+      "categoryName": "个护化妆",
+      "categoryChild": [
+        {
+          "categoryId": 48,
+          "categoryName": "清洁用品",
+          "categoryChild": [
+            {
+              "categoryId": 417,
+              "categoryName": "纸品湿巾",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 418,
+              "categoryName": "衣物清洁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 419,
+              "categoryName": "清洁工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 420,
+              "categoryName": "驱虫用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 421,
+              "categoryName": "家庭清洁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 422,
+              "categoryName": "皮具护理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 423,
+              "categoryName": "一次性用品",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 49,
+          "categoryName": "面部护肤",
+          "categoryChild": [
+            {
+              "categoryId": 424,
+              "categoryName": "洁面",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 425,
+              "categoryName": "乳液面霜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 426,
+              "categoryName": "面膜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 427,
+              "categoryName": "剃须",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 428,
+              "categoryName": "套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 429,
+              "categoryName": "精华",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 430,
+              "categoryName": "眼霜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 431,
+              "categoryName": "卸妆",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 432,
+              "categoryName": "防晒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 433,
+              "categoryName": "防晒隔离",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 434,
+              "categoryName": "T区护理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 435,
+              "categoryName": "眼部护理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 436,
+              "categoryName": "精华露",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 437,
+              "categoryName": "爽肤水",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 50,
+          "categoryName": "身体护理",
+          "categoryChild": [
+            {
+              "categoryId": 438,
+              "categoryName": "沐浴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 439,
+              "categoryName": "润肤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 440,
+              "categoryName": "颈部",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 441,
+              "categoryName": "手足",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 442,
+              "categoryName": "纤体塑形",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 443,
+              "categoryName": "美胸",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 444,
+              "categoryName": "套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 445,
+              "categoryName": "精油",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 446,
+              "categoryName": "洗发护发",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 447,
+              "categoryName": "染发/造型",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 448,
+              "categoryName": "香薰精油",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 449,
+              "categoryName": "磨砂/浴盐",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 450,
+              "categoryName": "手工/香皂",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 451,
+              "categoryName": "洗发",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 452,
+              "categoryName": "护发",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 453,
+              "categoryName": "染发",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 454,
+              "categoryName": "磨砂膏",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 455,
+              "categoryName": "香皂",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 51,
+          "categoryName": "口腔护理",
+          "categoryChild": [
+            {
+              "categoryId": 456,
+              "categoryName": "牙膏/牙粉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 457,
+              "categoryName": "牙刷/牙线",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 458,
+              "categoryName": "漱口水",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 459,
+              "categoryName": "套装",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 52,
+          "categoryName": "女性护理",
+          "categoryChild": [
+            {
+              "categoryId": 460,
+              "categoryName": "卫生巾",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 461,
+              "categoryName": "卫生护垫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 462,
+              "categoryName": "私密护理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 463,
+              "categoryName": "脱毛膏",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 464,
+              "categoryName": "其他",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 53,
+          "categoryName": "洗发护发",
+          "categoryChild": [
+            {
+              "categoryId": 465,
+              "categoryName": "洗发",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 466,
+              "categoryName": "护发",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 467,
+              "categoryName": "染发",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 468,
+              "categoryName": "造型",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 469,
+              "categoryName": "假发",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 470,
+              "categoryName": "套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 471,
+              "categoryName": "美发工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 472,
+              "categoryName": "脸部护理",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 54,
+          "categoryName": "香水彩妆",
+          "categoryChild": [
+            {
+              "categoryId": 473,
+              "categoryName": "香水",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 474,
+              "categoryName": "底妆",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 475,
+              "categoryName": "腮红",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 476,
+              "categoryName": "眼影",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 477,
+              "categoryName": "唇部",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 478,
+              "categoryName": "美甲",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 479,
+              "categoryName": "眼线",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 480,
+              "categoryName": "美妆工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 481,
+              "categoryName": "套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 482,
+              "categoryName": "防晒隔离",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 483,
+              "categoryName": "卸妆",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 484,
+              "categoryName": "眉笔",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 485,
+              "categoryName": "睫毛膏",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 9,
+      "categoryName": "服饰内衣",
+      "categoryChild": [
+        {
+          "categoryId": 55,
+          "categoryName": "女装",
+          "categoryChild": [
+            {
+              "categoryId": 486,
+              "categoryName": "T恤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 487,
+              "categoryName": "衬衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 488,
+              "categoryName": "针织衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 489,
+              "categoryName": "雪纺衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 490,
+              "categoryName": "卫衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 491,
+              "categoryName": "马甲",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 492,
+              "categoryName": "连衣裙",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 493,
+              "categoryName": "半身裙",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 494,
+              "categoryName": "牛仔裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 495,
+              "categoryName": "休闲裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 496,
+              "categoryName": "打底裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 497,
+              "categoryName": "正装裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 498,
+              "categoryName": "小西装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 499,
+              "categoryName": "短外套",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 500,
+              "categoryName": "风衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 501,
+              "categoryName": "毛呢大衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 502,
+              "categoryName": "真皮皮衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 503,
+              "categoryName": "棉服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 504,
+              "categoryName": "羽绒服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 505,
+              "categoryName": "大码女装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 506,
+              "categoryName": "中老年女装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 507,
+              "categoryName": "婚纱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 508,
+              "categoryName": "打底衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 509,
+              "categoryName": "旗袍/唐装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 510,
+              "categoryName": "加绒裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 511,
+              "categoryName": "吊带/背心",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 512,
+              "categoryName": "羊绒衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 513,
+              "categoryName": "短裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 514,
+              "categoryName": "皮草",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 515,
+              "categoryName": "礼服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 516,
+              "categoryName": "仿皮皮衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 517,
+              "categoryName": "羊毛衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 518,
+              "categoryName": "设计师/潮牌",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 56,
+          "categoryName": "男装",
+          "categoryChild": [
+            {
+              "categoryId": 519,
+              "categoryName": "衬衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 520,
+              "categoryName": "T恤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 521,
+              "categoryName": "POLO衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 522,
+              "categoryName": "针织衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 523,
+              "categoryName": "羊绒衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 524,
+              "categoryName": "卫衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 525,
+              "categoryName": "马甲/背心",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 526,
+              "categoryName": "夹克",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 527,
+              "categoryName": "风衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 528,
+              "categoryName": "毛呢大衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 529,
+              "categoryName": "仿皮皮衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 530,
+              "categoryName": "西服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 531,
+              "categoryName": "棉服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 532,
+              "categoryName": "羽绒服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 533,
+              "categoryName": "牛仔裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 534,
+              "categoryName": "休闲裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 535,
+              "categoryName": "西裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 536,
+              "categoryName": "西服套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 537,
+              "categoryName": "大码男装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 538,
+              "categoryName": "中老年男装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 539,
+              "categoryName": "唐装/中山装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 540,
+              "categoryName": "工装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 541,
+              "categoryName": "真皮皮衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 542,
+              "categoryName": "加绒裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 543,
+              "categoryName": "卫裤/运动裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 544,
+              "categoryName": "短裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 545,
+              "categoryName": "设计师/潮牌",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 546,
+              "categoryName": "羊毛衫",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 57,
+          "categoryName": "内衣",
+          "categoryChild": [
+            {
+              "categoryId": 547,
+              "categoryName": "文胸",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 548,
+              "categoryName": "女式内裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 549,
+              "categoryName": "男式内裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 550,
+              "categoryName": "睡衣/家居服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 551,
+              "categoryName": "塑身美体",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 552,
+              "categoryName": "泳衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 553,
+              "categoryName": "吊带/背心",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 554,
+              "categoryName": "抹胸",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 555,
+              "categoryName": "连裤袜/丝袜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 556,
+              "categoryName": "美腿袜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 557,
+              "categoryName": "商务男袜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 558,
+              "categoryName": "保暖内衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 559,
+              "categoryName": "情侣睡衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 560,
+              "categoryName": "文胸套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 561,
+              "categoryName": "少女文胸",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 562,
+              "categoryName": "休闲棉袜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 563,
+              "categoryName": "大码内衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 564,
+              "categoryName": "内衣配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 565,
+              "categoryName": "打底裤袜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 566,
+              "categoryName": "打底衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 567,
+              "categoryName": "秋衣秋裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 568,
+              "categoryName": "情趣内衣",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 58,
+          "categoryName": "洗衣服务",
+          "categoryChild": [
+            {
+              "categoryId": 569,
+              "categoryName": "服装洗护",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 59,
+          "categoryName": "服饰配件",
+          "categoryChild": [
+            {
+              "categoryId": 570,
+              "categoryName": "太阳镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 571,
+              "categoryName": "光学镜架/镜片",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 572,
+              "categoryName": "围巾/手套/帽子套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 573,
+              "categoryName": "袖扣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 574,
+              "categoryName": "棒球帽",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 575,
+              "categoryName": "毛线帽",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 576,
+              "categoryName": "遮阳帽",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 577,
+              "categoryName": "老花镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 578,
+              "categoryName": "装饰眼镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 579,
+              "categoryName": "防辐射眼镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 580,
+              "categoryName": "游泳镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 581,
+              "categoryName": "女士丝巾/围巾/披肩",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 582,
+              "categoryName": "男士丝巾/围巾",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 583,
+              "categoryName": "鸭舌帽",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 584,
+              "categoryName": "贝雷帽",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 585,
+              "categoryName": "礼帽",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 586,
+              "categoryName": "真皮手套",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 587,
+              "categoryName": "毛线手套",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 588,
+              "categoryName": "防晒手套",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 589,
+              "categoryName": "男士腰带/礼盒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 590,
+              "categoryName": "女士腰带/礼盒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 591,
+              "categoryName": "钥匙扣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 592,
+              "categoryName": "遮阳伞/雨伞",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 593,
+              "categoryName": "口罩",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 594,
+              "categoryName": "耳罩/耳包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 595,
+              "categoryName": "假领",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 596,
+              "categoryName": "毛线/布面料",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 597,
+              "categoryName": "领带/领结/领带夹",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 10,
+      "categoryName": "钟表",
+      "categoryChild": [
+        {
+          "categoryId": 60,
+          "categoryName": "钟表",
+          "categoryChild": [
+            {
+              "categoryId": 598,
+              "categoryName": "男表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 599,
+              "categoryName": "瑞表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 600,
+              "categoryName": "女表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 601,
+              "categoryName": "国表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 602,
+              "categoryName": "日韩表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 603,
+              "categoryName": "欧美表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 604,
+              "categoryName": "德表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 605,
+              "categoryName": "儿童手表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 606,
+              "categoryName": "智能手表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 607,
+              "categoryName": "闹钟",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 608,
+              "categoryName": "座钟挂钟",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 609,
+              "categoryName": "钟表配件",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 11,
+      "categoryName": "鞋靴",
+      "categoryChild": [
+        {
+          "categoryId": 61,
+          "categoryName": "流行男鞋",
+          "categoryChild": [
+            {
+              "categoryId": 610,
+              "categoryName": "商务休闲鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 611,
+              "categoryName": "正装鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 612,
+              "categoryName": "休闲鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 613,
+              "categoryName": "凉鞋/沙滩鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 614,
+              "categoryName": "男靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 615,
+              "categoryName": "功能鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 616,
+              "categoryName": "拖鞋/人字拖",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 617,
+              "categoryName": "雨鞋/雨靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 618,
+              "categoryName": "传统布鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 619,
+              "categoryName": "鞋配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 620,
+              "categoryName": "帆布鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 621,
+              "categoryName": "增高鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 622,
+              "categoryName": "工装鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 623,
+              "categoryName": "定制鞋",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 62,
+          "categoryName": "时尚女鞋",
+          "categoryChild": [
+            {
+              "categoryId": 624,
+              "categoryName": "高跟鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 625,
+              "categoryName": "单鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 626,
+              "categoryName": "休闲鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 627,
+              "categoryName": "凉鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 628,
+              "categoryName": "女靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 629,
+              "categoryName": "雪地靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 630,
+              "categoryName": "拖鞋/人字拖",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 631,
+              "categoryName": "踝靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 632,
+              "categoryName": "筒靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 633,
+              "categoryName": "帆布鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 634,
+              "categoryName": "雨鞋/雨靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 635,
+              "categoryName": "妈妈鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 636,
+              "categoryName": "鞋配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 637,
+              "categoryName": "特色鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 638,
+              "categoryName": "鱼嘴鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 639,
+              "categoryName": "布鞋/绣花鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 640,
+              "categoryName": "马丁靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 641,
+              "categoryName": "坡跟鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 642,
+              "categoryName": "松糕鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 643,
+              "categoryName": "内增高",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 644,
+              "categoryName": "防水台",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 12,
+      "categoryName": "母婴",
+      "categoryChild": [
+        {
+          "categoryId": 63,
+          "categoryName": "奶粉",
+          "categoryChild": [
+            {
+              "categoryId": 645,
+              "categoryName": "婴幼奶粉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 646,
+              "categoryName": "孕妈奶粉",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 64,
+          "categoryName": "营养辅食",
+          "categoryChild": [
+            {
+              "categoryId": 647,
+              "categoryName": "益生菌/初乳",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 648,
+              "categoryName": "米粉/菜粉",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 649,
+              "categoryName": "果泥/果汁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 650,
+              "categoryName": "DHA",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 651,
+              "categoryName": "宝宝零食",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 652,
+              "categoryName": "钙铁锌/维生素",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 653,
+              "categoryName": "清火/开胃",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 654,
+              "categoryName": "面条/粥",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 65,
+          "categoryName": "尿裤湿巾",
+          "categoryChild": [
+            {
+              "categoryId": 655,
+              "categoryName": "婴儿尿裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 656,
+              "categoryName": "拉拉裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 657,
+              "categoryName": "婴儿湿巾",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 658,
+              "categoryName": "成人尿裤",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 66,
+          "categoryName": "喂养用品",
+          "categoryChild": [
+            {
+              "categoryId": 659,
+              "categoryName": "奶瓶奶嘴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 660,
+              "categoryName": "吸奶器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 661,
+              "categoryName": "暖奶消毒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 662,
+              "categoryName": "儿童餐具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 663,
+              "categoryName": "水壶/水杯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 664,
+              "categoryName": "牙胶安抚",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 665,
+              "categoryName": "围兜/防溅衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 666,
+              "categoryName": "辅食料理机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 667,
+              "categoryName": "食物存储",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 67,
+          "categoryName": "洗护用品",
+          "categoryChild": [
+            {
+              "categoryId": 668,
+              "categoryName": "宝宝护肤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 669,
+              "categoryName": "洗发沐浴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 670,
+              "categoryName": "奶瓶清洗",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 671,
+              "categoryName": "驱蚊防晒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 672,
+              "categoryName": "理发器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 673,
+              "categoryName": "洗澡用具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 674,
+              "categoryName": "婴儿口腔清洁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 675,
+              "categoryName": "洗衣液/皂",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 676,
+              "categoryName": "日常护理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 677,
+              "categoryName": "座便器",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 68,
+          "categoryName": "童车童床",
+          "categoryChild": [
+            {
+              "categoryId": 678,
+              "categoryName": "婴儿推车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 679,
+              "categoryName": "餐椅摇椅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 680,
+              "categoryName": "婴儿床",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 681,
+              "categoryName": "学步车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 682,
+              "categoryName": "三轮车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 683,
+              "categoryName": "自行车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 684,
+              "categoryName": "电动车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 685,
+              "categoryName": "扭扭车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 686,
+              "categoryName": "滑板车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 687,
+              "categoryName": "婴儿床垫",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 69,
+          "categoryName": "寝居服饰",
+          "categoryChild": [
+            {
+              "categoryId": 688,
+              "categoryName": "婴儿外出服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 689,
+              "categoryName": "婴儿内衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 690,
+              "categoryName": "婴儿礼盒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 691,
+              "categoryName": "婴儿鞋帽袜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 692,
+              "categoryName": "安全防护",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 693,
+              "categoryName": "家居床品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 694,
+              "categoryName": "睡袋/抱被",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 695,
+              "categoryName": "爬行垫",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 70,
+          "categoryName": "妈妈专区",
+          "categoryChild": [
+            {
+              "categoryId": 696,
+              "categoryName": "妈咪包/背婴带",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 697,
+              "categoryName": "产后塑身",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 698,
+              "categoryName": "文胸/内裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 699,
+              "categoryName": "防辐射服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 700,
+              "categoryName": "孕妈装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 701,
+              "categoryName": "孕期营养",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 702,
+              "categoryName": "孕妇护肤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 703,
+              "categoryName": "待产护理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 704,
+              "categoryName": "月子装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 705,
+              "categoryName": "防溢乳垫",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 71,
+          "categoryName": "童装童鞋",
+          "categoryChild": [
+            {
+              "categoryId": 706,
+              "categoryName": "套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 707,
+              "categoryName": "上衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 708,
+              "categoryName": "裤子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 709,
+              "categoryName": "裙子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 710,
+              "categoryName": "内衣/家居服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 711,
+              "categoryName": "羽绒服/棉服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 712,
+              "categoryName": "亲子装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 713,
+              "categoryName": "儿童配饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 714,
+              "categoryName": "礼服/演出服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 715,
+              "categoryName": "运动鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 716,
+              "categoryName": "皮鞋/帆布鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 717,
+              "categoryName": "靴子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 718,
+              "categoryName": "凉鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 719,
+              "categoryName": "功能鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 720,
+              "categoryName": "户外/运动服",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 72,
+          "categoryName": "安全座椅",
+          "categoryChild": [
+            {
+              "categoryId": 721,
+              "categoryName": "提篮式",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 722,
+              "categoryName": "安全座椅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 723,
+              "categoryName": "增高垫",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 13,
+      "categoryName": "礼品箱包",
+      "categoryChild": [
+        {
+          "categoryId": 73,
+          "categoryName": "潮流女包",
+          "categoryChild": [
+            {
+              "categoryId": 724,
+              "categoryName": "钱包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 725,
+              "categoryName": "手拿包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 726,
+              "categoryName": "单肩包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 727,
+              "categoryName": "双肩包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 728,
+              "categoryName": "手提包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 729,
+              "categoryName": "斜挎包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 730,
+              "categoryName": "钥匙包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 731,
+              "categoryName": "卡包/零钱包",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 74,
+          "categoryName": "精品男包",
+          "categoryChild": [
+            {
+              "categoryId": 732,
+              "categoryName": "男士钱包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 733,
+              "categoryName": "男士手包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 734,
+              "categoryName": "卡包名片夹",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 735,
+              "categoryName": "商务公文包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 736,
+              "categoryName": "双肩包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 737,
+              "categoryName": "单肩/斜挎包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 738,
+              "categoryName": "钥匙包",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 75,
+          "categoryName": "功能箱包",
+          "categoryChild": [
+            {
+              "categoryId": 739,
+              "categoryName": "电脑包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 740,
+              "categoryName": "拉杆箱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 741,
+              "categoryName": "旅行包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 742,
+              "categoryName": "旅行配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 743,
+              "categoryName": "休闲运动包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 744,
+              "categoryName": "拉杆包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 745,
+              "categoryName": "登山包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 746,
+              "categoryName": "妈咪包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 747,
+              "categoryName": "书包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 748,
+              "categoryName": "相机包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 749,
+              "categoryName": "腰包/胸包",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 76,
+          "categoryName": "礼品",
+          "categoryChild": [
+            {
+              "categoryId": 750,
+              "categoryName": "火机烟具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 751,
+              "categoryName": "礼品文具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 752,
+              "categoryName": "军刀军具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 753,
+              "categoryName": "收藏品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 754,
+              "categoryName": "工艺礼品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 755,
+              "categoryName": "创意礼品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 756,
+              "categoryName": "礼盒礼券",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 757,
+              "categoryName": "鲜花绿植",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 758,
+              "categoryName": "婚庆节庆",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 759,
+              "categoryName": "京东卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 760,
+              "categoryName": "美妆礼品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 761,
+              "categoryName": "礼品定制",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 762,
+              "categoryName": "京东福卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 763,
+              "categoryName": "古董文玩",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 77,
+          "categoryName": "奢侈品",
+          "categoryChild": [
+            {
+              "categoryId": 764,
+              "categoryName": "箱包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 765,
+              "categoryName": "钱包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 766,
+              "categoryName": "服饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 767,
+              "categoryName": "腰带",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 768,
+              "categoryName": "太阳镜/眼镜框",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 769,
+              "categoryName": "配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 770,
+              "categoryName": "鞋靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 771,
+              "categoryName": "饰品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 772,
+              "categoryName": "名品腕表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 773,
+              "categoryName": "高档化妆品",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 78,
+          "categoryName": "婚庆",
+          "categoryChild": [
+            {
+              "categoryId": 774,
+              "categoryName": "婚嫁首饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 775,
+              "categoryName": "婚纱摄影",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 776,
+              "categoryName": "婚纱礼服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 777,
+              "categoryName": "婚庆服务",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 778,
+              "categoryName": "婚庆礼品/用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 779,
+              "categoryName": "婚宴",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 14,
+      "categoryName": "食品饮料、保健食品",
+      "categoryChild": [
+        {
+          "categoryId": 79,
+          "categoryName": "进口食品",
+          "categoryChild": [
+            {
+              "categoryId": 780,
+              "categoryName": "饼干蛋糕",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 781,
+              "categoryName": "糖果/巧克力",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 782,
+              "categoryName": "休闲零食",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 783,
+              "categoryName": "冲调饮品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 784,
+              "categoryName": "粮油调味",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 785,
+              "categoryName": "牛奶",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 80,
+          "categoryName": "地方特产",
+          "categoryChild": [
+            {
+              "categoryId": 786,
+              "categoryName": "其他特产",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 787,
+              "categoryName": "新疆",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 788,
+              "categoryName": "北京",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 789,
+              "categoryName": "山西",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 790,
+              "categoryName": "内蒙古",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 791,
+              "categoryName": "福建",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 792,
+              "categoryName": "湖南",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 793,
+              "categoryName": "四川",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 794,
+              "categoryName": "云南",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 795,
+              "categoryName": "东北",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 81,
+          "categoryName": "休闲食品",
+          "categoryChild": [
+            {
+              "categoryId": 796,
+              "categoryName": "休闲零食",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 797,
+              "categoryName": "坚果炒货",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 798,
+              "categoryName": "肉干肉脯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 799,
+              "categoryName": "蜜饯果干",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 800,
+              "categoryName": "糖果/巧克力",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 801,
+              "categoryName": "饼干蛋糕",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 802,
+              "categoryName": "无糖食品",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 82,
+          "categoryName": "粮油调味",
+          "categoryChild": [
+            {
+              "categoryId": 803,
+              "categoryName": "米面杂粮",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 804,
+              "categoryName": "食用油",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 805,
+              "categoryName": "调味品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 806,
+              "categoryName": "南北干货",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 807,
+              "categoryName": "方便食品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 808,
+              "categoryName": "有机食品",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 83,
+          "categoryName": "饮料冲调",
+          "categoryChild": [
+            {
+              "categoryId": 809,
+              "categoryName": "饮用水",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 810,
+              "categoryName": "饮料",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 811,
+              "categoryName": "牛奶乳品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 812,
+              "categoryName": "咖啡/奶茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 813,
+              "categoryName": "冲饮谷物",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 814,
+              "categoryName": "蜂蜜/柚子茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 815,
+              "categoryName": "成人奶粉",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 84,
+          "categoryName": "食品礼券",
+          "categoryChild": [
+            {
+              "categoryId": 816,
+              "categoryName": "月饼",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 817,
+              "categoryName": "大闸蟹",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 818,
+              "categoryName": "粽子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 819,
+              "categoryName": "卡券",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 85,
+          "categoryName": "茗茶",
+          "categoryChild": [
+            {
+              "categoryId": 820,
+              "categoryName": "铁观音",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 821,
+              "categoryName": "普洱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 822,
+              "categoryName": "龙井",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 823,
+              "categoryName": "绿茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 824,
+              "categoryName": "红茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 825,
+              "categoryName": "乌龙茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 826,
+              "categoryName": "花草茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 827,
+              "categoryName": "花果茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 828,
+              "categoryName": "养生茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 829,
+              "categoryName": "黑茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 830,
+              "categoryName": "白茶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 831,
+              "categoryName": "其它茶",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 15,
+      "categoryName": "珠宝",
+      "categoryChild": [
+        {
+          "categoryId": 86,
+          "categoryName": "时尚饰品",
+          "categoryChild": [
+            {
+              "categoryId": 832,
+              "categoryName": "项链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 833,
+              "categoryName": "手链/脚链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 834,
+              "categoryName": "戒指",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 835,
+              "categoryName": "耳饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 836,
+              "categoryName": "毛衣链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 837,
+              "categoryName": "发饰/发卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 838,
+              "categoryName": "胸针",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 839,
+              "categoryName": "饰品配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 840,
+              "categoryName": "婚庆饰品",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 87,
+          "categoryName": "黄金",
+          "categoryChild": [
+            {
+              "categoryId": 841,
+              "categoryName": "黄金吊坠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 842,
+              "categoryName": "黄金项链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 843,
+              "categoryName": "黄金转运珠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 844,
+              "categoryName": "黄金手镯/手链/脚链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 845,
+              "categoryName": "黄金耳饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 846,
+              "categoryName": "黄金戒指",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 88,
+          "categoryName": "K金饰品",
+          "categoryChild": [
+            {
+              "categoryId": 847,
+              "categoryName": "K金吊坠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 848,
+              "categoryName": "K金项链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 849,
+              "categoryName": "K金手镯/手链/脚链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 850,
+              "categoryName": "K金戒指",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 851,
+              "categoryName": "K金耳饰",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 89,
+          "categoryName": "金银投资",
+          "categoryChild": [
+            {
+              "categoryId": 852,
+              "categoryName": "投资金",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 853,
+              "categoryName": "投资银",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 854,
+              "categoryName": "投资收藏",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 90,
+          "categoryName": "银饰",
+          "categoryChild": [
+            {
+              "categoryId": 855,
+              "categoryName": "银吊坠/项链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 856,
+              "categoryName": "银手镯/手链/脚链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 857,
+              "categoryName": "银戒指",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 858,
+              "categoryName": "银耳饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 859,
+              "categoryName": "足银手镯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 860,
+              "categoryName": "宝宝银饰",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 91,
+          "categoryName": "钻石",
+          "categoryChild": [
+            {
+              "categoryId": 861,
+              "categoryName": "裸钻",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 862,
+              "categoryName": "钻戒",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 863,
+              "categoryName": "钻石项链/吊坠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 864,
+              "categoryName": "钻石耳饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 865,
+              "categoryName": "钻石手镯/手链",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 92,
+          "categoryName": "翡翠玉石",
+          "categoryChild": [
+            {
+              "categoryId": 866,
+              "categoryName": "项链/吊坠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 867,
+              "categoryName": "手镯/手串",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 868,
+              "categoryName": "戒指",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 869,
+              "categoryName": "耳饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 870,
+              "categoryName": "挂件/摆件/把件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 871,
+              "categoryName": "玉石孤品",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 93,
+          "categoryName": "水晶玛瑙",
+          "categoryChild": [
+            {
+              "categoryId": 872,
+              "categoryName": "项链/吊坠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 873,
+              "categoryName": "耳饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 874,
+              "categoryName": "手镯/手链/脚链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 875,
+              "categoryName": "戒指",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 876,
+              "categoryName": "头饰/胸针",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 877,
+              "categoryName": "摆件/挂件",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 94,
+          "categoryName": "彩宝",
+          "categoryChild": [
+            {
+              "categoryId": 878,
+              "categoryName": "琥珀/蜜蜡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 879,
+              "categoryName": "碧玺",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 880,
+              "categoryName": "红宝石/蓝宝石",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 881,
+              "categoryName": "坦桑石",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 882,
+              "categoryName": "珊瑚",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 883,
+              "categoryName": "祖母绿",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 884,
+              "categoryName": "葡萄石",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 885,
+              "categoryName": "其他天然宝石",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 886,
+              "categoryName": "项链/吊坠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 887,
+              "categoryName": "耳饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 888,
+              "categoryName": "手镯/手链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 889,
+              "categoryName": "戒指",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 95,
+          "categoryName": "铂金",
+          "categoryChild": [
+            {
+              "categoryId": 890,
+              "categoryName": "铂金项链/吊坠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 891,
+              "categoryName": "铂金手镯/手链/脚链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 892,
+              "categoryName": "铂金戒指",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 893,
+              "categoryName": "铂金耳饰",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 96,
+          "categoryName": "木手串/把件",
+          "categoryChild": [
+            {
+              "categoryId": 894,
+              "categoryName": "小叶紫檀",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 895,
+              "categoryName": "黄花梨",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 896,
+              "categoryName": "沉香木",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 897,
+              "categoryName": "金丝楠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 898,
+              "categoryName": "菩提",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 899,
+              "categoryName": "其他",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 900,
+              "categoryName": "橄榄核/核桃",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 901,
+              "categoryName": "檀香",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 97,
+          "categoryName": "珍珠",
+          "categoryChild": [
+            {
+              "categoryId": 902,
+              "categoryName": "珍珠项链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 903,
+              "categoryName": "珍珠吊坠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 904,
+              "categoryName": "珍珠耳饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 905,
+              "categoryName": "珍珠手链",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 906,
+              "categoryName": "珍珠戒指",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 907,
+              "categoryName": "珍珠胸针",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 16,
+      "categoryName": "汽车用品",
+      "categoryChild": [
+        {
+          "categoryId": 98,
+          "categoryName": "维修保养",
+          "categoryChild": [
+            {
+              "categoryId": 908,
+              "categoryName": "机油",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 909,
+              "categoryName": "正时皮带",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 910,
+              "categoryName": "添加剂",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 911,
+              "categoryName": "汽车喇叭",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 912,
+              "categoryName": "防冻液",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 913,
+              "categoryName": "汽车玻璃",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 914,
+              "categoryName": "滤清器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 915,
+              "categoryName": "火花塞",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 916,
+              "categoryName": "减震器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 917,
+              "categoryName": "柴机油/辅助油",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 918,
+              "categoryName": "雨刷",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 919,
+              "categoryName": "车灯",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 920,
+              "categoryName": "后视镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 921,
+              "categoryName": "轮胎",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 922,
+              "categoryName": "轮毂",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 923,
+              "categoryName": "刹车片/盘",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 924,
+              "categoryName": "维修配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 925,
+              "categoryName": "蓄电池",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 926,
+              "categoryName": "底盘装甲/护板",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 927,
+              "categoryName": "贴膜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 928,
+              "categoryName": "汽修工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 929,
+              "categoryName": "改装配件",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 99,
+          "categoryName": "车载电器",
+          "categoryChild": [
+            {
+              "categoryId": 930,
+              "categoryName": "导航仪",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 931,
+              "categoryName": "安全预警仪",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 932,
+              "categoryName": "行车记录仪",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 933,
+              "categoryName": "倒车雷达",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 934,
+              "categoryName": "蓝牙设备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 935,
+              "categoryName": "车载影音",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 936,
+              "categoryName": "净化器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 937,
+              "categoryName": "电源",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 938,
+              "categoryName": "智能驾驶",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 939,
+              "categoryName": "车载电台",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 940,
+              "categoryName": "车载电器配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 941,
+              "categoryName": "吸尘器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 942,
+              "categoryName": "智能车机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 943,
+              "categoryName": "冰箱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 944,
+              "categoryName": "汽车音响",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 945,
+              "categoryName": "车载生活电器",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 100,
+          "categoryName": "美容清洗",
+          "categoryChild": [
+            {
+              "categoryId": 946,
+              "categoryName": "车蜡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 947,
+              "categoryName": "补漆笔",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 948,
+              "categoryName": "玻璃水",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 949,
+              "categoryName": "清洁剂",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 950,
+              "categoryName": "洗车工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 951,
+              "categoryName": "镀晶镀膜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 952,
+              "categoryName": "打蜡机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 953,
+              "categoryName": "洗车配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 954,
+              "categoryName": "洗车机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 955,
+              "categoryName": "洗车水枪",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 956,
+              "categoryName": "毛巾掸子",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 101,
+          "categoryName": "汽车装饰",
+          "categoryChild": [
+            {
+              "categoryId": 957,
+              "categoryName": "脚垫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 958,
+              "categoryName": "座垫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 959,
+              "categoryName": "座套",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 960,
+              "categoryName": "后备箱垫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 961,
+              "categoryName": "头枕腰靠",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 962,
+              "categoryName": "方向盘套",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 963,
+              "categoryName": "香水",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 964,
+              "categoryName": "空气净化",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 965,
+              "categoryName": "挂件摆件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 966,
+              "categoryName": "功能小件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 967,
+              "categoryName": "车身装饰件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 968,
+              "categoryName": "车衣",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 102,
+          "categoryName": "安全自驾",
+          "categoryChild": [
+            {
+              "categoryId": 969,
+              "categoryName": "安全座椅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 970,
+              "categoryName": "胎压监测",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 971,
+              "categoryName": "防盗设备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 972,
+              "categoryName": "应急救援",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 973,
+              "categoryName": "保温箱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 974,
+              "categoryName": "地锁",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 975,
+              "categoryName": "摩托车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 976,
+              "categoryName": "充气泵",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 977,
+              "categoryName": "储物箱",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 978,
+              "categoryName": "自驾野营",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 979,
+              "categoryName": "摩托车装备",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 103,
+          "categoryName": "汽车服务",
+          "categoryChild": [
+            {
+              "categoryId": 980,
+              "categoryName": "清洗美容",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 981,
+              "categoryName": "功能升级",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 982,
+              "categoryName": "保养维修",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 983,
+              "categoryName": "油卡充值",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 984,
+              "categoryName": "车险",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 985,
+              "categoryName": "加油卡",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 986,
+              "categoryName": "ETC",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 987,
+              "categoryName": "驾驶培训",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 104,
+          "categoryName": "赛事改装",
+          "categoryChild": [
+            {
+              "categoryId": 988,
+              "categoryName": "赛事服装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 989,
+              "categoryName": "赛事用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 990,
+              "categoryName": "制动系统",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 991,
+              "categoryName": "悬挂系统",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 992,
+              "categoryName": "进气系统",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 993,
+              "categoryName": "排气系统",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 994,
+              "categoryName": "电子管理",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 995,
+              "categoryName": "车身强化",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 996,
+              "categoryName": "赛事座椅",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": 17,
+      "categoryName": "运动健康",
+      "categoryChild": [
+        {
+          "categoryId": 105,
+          "categoryName": "运动鞋包",
+          "categoryChild": [
+            {
+              "categoryId": 997,
+              "categoryName": "跑步鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 998,
+              "categoryName": "休闲鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 999,
+              "categoryName": "篮球鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1000,
+              "categoryName": "板鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1001,
+              "categoryName": "帆布鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1002,
+              "categoryName": "足球鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1003,
+              "categoryName": "乒羽网鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1004,
+              "categoryName": "专项运动鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1005,
+              "categoryName": "训练鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1006,
+              "categoryName": "拖鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1007,
+              "categoryName": "运动包",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 106,
+          "categoryName": "运动服饰",
+          "categoryChild": [
+            {
+              "categoryId": 1008,
+              "categoryName": "羽绒服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1009,
+              "categoryName": "棉服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1010,
+              "categoryName": "运动裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1011,
+              "categoryName": "夹克/风衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1012,
+              "categoryName": "卫衣/套头衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1013,
+              "categoryName": "T恤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1014,
+              "categoryName": "套装",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1015,
+              "categoryName": "乒羽网服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1016,
+              "categoryName": "健身服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1017,
+              "categoryName": "运动背心",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1018,
+              "categoryName": "毛衫/线衫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1019,
+              "categoryName": "运动配饰",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 107,
+          "categoryName": "骑行运动",
+          "categoryChild": [
+            {
+              "categoryId": 1020,
+              "categoryName": "折叠车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1021,
+              "categoryName": "山地车/公路车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1022,
+              "categoryName": "电动车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1023,
+              "categoryName": "其他整车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1024,
+              "categoryName": "骑行服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1025,
+              "categoryName": "骑行装备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1026,
+              "categoryName": "平衡车",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 108,
+          "categoryName": "垂钓用品",
+          "categoryChild": [
+            {
+              "categoryId": 1027,
+              "categoryName": "鱼竿鱼线",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1028,
+              "categoryName": "浮漂鱼饵",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1029,
+              "categoryName": "钓鱼桌椅",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1030,
+              "categoryName": "钓鱼配件",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1031,
+              "categoryName": "钓箱鱼包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1032,
+              "categoryName": "其它",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 109,
+          "categoryName": "游泳用品",
+          "categoryChild": [
+            {
+              "categoryId": 1033,
+              "categoryName": "泳镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1034,
+              "categoryName": "泳帽",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1035,
+              "categoryName": "游泳包防水包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1036,
+              "categoryName": "女士泳衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1037,
+              "categoryName": "男士泳衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1038,
+              "categoryName": "比基尼",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1039,
+              "categoryName": "其它",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 110,
+          "categoryName": "户外鞋服",
+          "categoryChild": [
+            {
+              "categoryId": 1040,
+              "categoryName": "冲锋衣裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1041,
+              "categoryName": "速干衣裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1042,
+              "categoryName": "滑雪服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1043,
+              "categoryName": "羽绒服/棉服",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1044,
+              "categoryName": "休闲衣裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1045,
+              "categoryName": "抓绒衣裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1046,
+              "categoryName": "软壳衣裤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1047,
+              "categoryName": "T恤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1048,
+              "categoryName": "户外风衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1049,
+              "categoryName": "功能内衣",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1050,
+              "categoryName": "军迷服饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1051,
+              "categoryName": "登山鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1052,
+              "categoryName": "雪地靴",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1053,
+              "categoryName": "徒步鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1054,
+              "categoryName": "越野跑鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1055,
+              "categoryName": "休闲鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1056,
+              "categoryName": "工装鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1057,
+              "categoryName": "溯溪鞋",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1058,
+              "categoryName": "沙滩/凉拖",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1059,
+              "categoryName": "户外袜",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 111,
+          "categoryName": "户外装备",
+          "categoryChild": [
+            {
+              "categoryId": 1060,
+              "categoryName": "帐篷/垫子",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1061,
+              "categoryName": "睡袋/吊床",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1062,
+              "categoryName": "登山攀岩",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1063,
+              "categoryName": "户外配饰",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1064,
+              "categoryName": "背包",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1065,
+              "categoryName": "户外照明",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1066,
+              "categoryName": "户外仪表",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1067,
+              "categoryName": "户外工具",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1068,
+              "categoryName": "望远镜",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1069,
+              "categoryName": "旅游用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1070,
+              "categoryName": "便携桌椅床",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1071,
+              "categoryName": "野餐烧烤",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1072,
+              "categoryName": "军迷用品",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1073,
+              "categoryName": "救援装备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1074,
+              "categoryName": "滑雪装备",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1075,
+              "categoryName": "极限户外",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1076,
+              "categoryName": "冲浪潜水",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 112,
+          "categoryName": "健身训练",
+          "categoryChild": [
+            {
+              "categoryId": 1077,
+              "categoryName": "综合训练器",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1078,
+              "categoryName": "其他大型器械",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1079,
+              "categoryName": "哑铃",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1080,
+              "categoryName": "仰卧板/收腹机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1081,
+              "categoryName": "其他中小型器材",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1082,
+              "categoryName": "瑜伽舞蹈",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1083,
+              "categoryName": "甩脂机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1084,
+              "categoryName": "踏步机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1085,
+              "categoryName": "武术搏击",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1086,
+              "categoryName": "健身车/动感单车",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1087,
+              "categoryName": "跑步机",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1088,
+              "categoryName": "运动护具",
+              "categoryChild": null
+            }
+          ]
+        },
+        {
+          "categoryId": 113,
+          "categoryName": "体育用品",
+          "categoryChild": [
+            {
+              "categoryId": 1089,
+              "categoryName": "羽毛球",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1090,
+              "categoryName": "乒乓球",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1091,
+              "categoryName": "篮球",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1092,
+              "categoryName": "足球",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1093,
+              "categoryName": "网球",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1094,
+              "categoryName": "排球",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1095,
+              "categoryName": "高尔夫",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1096,
+              "categoryName": "台球",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1097,
+              "categoryName": "棋牌麻将",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1098,
+              "categoryName": "轮滑滑板",
+              "categoryChild": null
+            },
+            {
+              "categoryId": 1099,
+              "categoryName": "其他",
+              "categoryChild": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ok": true
+}

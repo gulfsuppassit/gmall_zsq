@@ -1,0 +1,36 @@
+GET http://localhost:7000/admin/product/rebuild
+
+<> 2022-05-24T201508.200.json
+
+###
+
+GET http://localhost:7000/rpc/inner/product/categorys
+
+<> 2022-05-24T111330.200.json
+
+###
+
+GET http://localhost:7000/rpc/inner/product/categorys
+
+<> 2022-05-24T111254.200.json
+
+###
+
+GET http://localhost:7000/rpc/inner/product/categorys
+
+<> 2022-05-24T111135.200.json
+
+###
+
+GET http://localhost:7000/rpc/inner/product/categorys
+
+<> 2022-05-24T110909.200.json
+
+###
+
+GET http://localhost:7000/rpc/inner/product/categorys
+
+<> 2022-05-24T110808.200.json
+
+###
+
