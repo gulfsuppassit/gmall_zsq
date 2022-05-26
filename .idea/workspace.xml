@@ -5,36 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f111c4ac-8ad9-489b-8a90-efd2bd79e97e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/CacheAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/anno/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/anno/EnableAutoCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/aop/CacheAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/constant/RedisConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/util/CacheHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/util/JSONs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-item/src/test/java/com/atguigu/gmall/item/SpelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/annotation/EnableRedissonAndCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/anno/EnableRedissonAndCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/config/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/config/RedissonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/config/RedissonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/config/RedissonConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/service/BloomTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/service/BloomTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/service/CacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/service/CacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/service/SkuBloomTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/service/SkuBloomTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/service/impl/CacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/service/impl/CacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-item/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/config/ItemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/config/ItemConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/DetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/DetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/config/ProductConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/config/ProductConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/cron/SkuIdBloomTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/cron/SkuIdBloomTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/aop/CacheAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/aop/CacheAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/controller/DetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/controller/DetailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/src/test/java/com/atguigu/gmall/product/ThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/test/java/com/atguigu/gmall/product/ThreadPoolTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/web-all/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <list id="9d0c2651-94d6-423d-8e72-ee323b8c905d" name="getMethodAnnotation" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +152,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThreadPoolTest.completableFutureTest03">
+  <component name="RunManager" selected="Compound.mall">
     <configuration default="true" type="CompoundRunConfigurationType">
       <toRun name="ProductApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ServerGatewayApplication" type="SpringBootApplicationConfigurationType" />
@@ -331,11 +306,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="JUnit.ThreadPoolTest.completableFutureTest03" />
         <item itemvalue="JUnit.ThreadPoolTest.completableFutureTest02" />
         <item itemvalue="JUnit.SpelTest.spelTest" />
         <item itemvalue="JUnit.BloomTest.test" />
-        <item itemvalue="HTTP Request.generated-requests | #3" />
       </list>
     </recent_temporary>
   </component>
@@ -397,7 +372,7 @@
       <workItem from="1653266112318" duration="19222000" />
       <workItem from="1653352142249" duration="34497000" />
       <workItem from="1653438298422" duration="23433000" />
-      <workItem from="1653528576944" duration="16680000" />
+      <workItem from="1653528576944" duration="19846000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1652789462472</created>
@@ -462,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653473869696</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="第5次提交:将缓存封装成一个starter,只需到导入自定义starter就可以使用@Cache">
+      <created>1653553167514</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1653553167514</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +463,8 @@
     <MESSAGE value="第2次提交:添加了swagger注解" />
     <MESSAGE value="第3次提交" />
     <MESSAGE value="第4次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第4次提交" />
+    <MESSAGE value="第5次提交:将缓存封装成一个starter,只需到导入自定义starter就可以使用@Cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="第5次提交:将缓存封装成一个starter,只需到导入自定义starter就可以使用@Cache" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -507,7 +490,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/controller/DetailController.java</url>
-          <line>38</line>
+          <line>39</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>

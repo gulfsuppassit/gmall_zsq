@@ -32,19 +32,20 @@ public class BaseCategoryServiceImpl implements BaseCategoryService {
     private CacheService cacheService;
 
 
+    @Cache("category1")
     @Override
     public List<BaseCategory1> getCategory1() {
         QueryWrapper<BaseCategory1> queryWrapper = new QueryWrapper<>();
         return baseCategory1Mapper.selectList(queryWrapper);
     }
-
+    @Cache("category2byCategory1:#{#args[0]}")
     @Override
     public List<BaseCategory2> getCategory2ByC1Id(Long category1Id) {
         QueryWrapper<BaseCategory2> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("category1_id", category1Id);
         return baseCategory2Mapper.selectList(queryWrapper);
     }
-
+    @Cache("category3byCategory2:#{#args[0]}")
     @Override
     public List<BaseCategory3> getCategory3ByC2Id(Long category2Id) {
         QueryWrapper<BaseCategory3> queryWrapper = new QueryWrapper<>();
@@ -58,6 +59,7 @@ public class BaseCategoryServiceImpl implements BaseCategoryService {
         return baseCategory1Mapper.getCategoryAndChild();
     }
 
+    @Cache("categoryView")
     @Override
     public BaseCategoryView getCategoryView(Long skuId) {
 

@@ -1,5 +1,11 @@
 GET http://localhost:7000/admin/product/rebuild
 
+<> 2022-05-26T170714.200.json
+
+###
+
+GET http://localhost:7000/admin/product/rebuild
+
 <> 2022-05-24T201508.200.json
 
 ###

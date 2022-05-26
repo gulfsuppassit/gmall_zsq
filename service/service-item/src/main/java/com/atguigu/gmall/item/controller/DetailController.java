@@ -29,7 +29,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 @RestController
 @RequestMapping("/rpc/inner/item")
 public class DetailController {
-
+    @Autowired
+    ProductFeignClient productFeignClient;
     @Autowired
     private DetailService detailService;
 
@@ -37,6 +38,8 @@ public class DetailController {
     public Result<ItemDetailTo> detail(@PathVariable("skuId")Long skuId){
         //获取分类信息
         ItemDetailTo itemDetailTo = detailService.getDetail(skuId);
+        BigDecimal data = productFeignClient.getPrice(skuId).getData();
+        itemDetailTo.setPrice(data);
         return Result.ok(itemDetailTo);
     }
 
