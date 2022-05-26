@@ -1,6 +1,4 @@
-package com.atguigu.gmall.service.service;
-
-import org.redisson.api.RBloomFilter;
+package com.atguigu.gmall.cache.service;
 
 /**
  * @author zsq

@@ -1,4 +1,4 @@
-package com.atguigu.gmall.service.service;
+package com.atguigu.gmall.cache.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 

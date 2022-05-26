@@ -1,8 +1,8 @@
-package com.atguigu.gmall.service.config;
+package com.atguigu.gmall.cache.config;
 
-import com.atguigu.gmall.service.constant.RedisConst;
-import com.atguigu.gmall.service.service.BloomTask;
-import com.atguigu.gmall.service.service.SkuBloomTask;
+import com.atguigu.gmall.cache.constant.RedisConstant;
+import com.atguigu.gmall.cache.service.BloomTask;
+import com.atguigu.gmall.cache.service.SkuBloomTask;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.Redisson;
 import org.redisson.api.RBloomFilter;
@@ -11,13 +11,11 @@ import org.redisson.config.Config;
 import org.redisson.config.TransportMode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -54,7 +52,7 @@ public class RedissonConfiguration {
 
         @Bean
         public  RBloomFilter<Object> skuIdBloom(RedissonClient redissonClient){
-                RBloomFilter<Object> filter = redissonClient.getBloomFilter(RedisConst.BLOOM_SKU_ID);
+                RBloomFilter<Object> filter = redissonClient.getBloomFilter(RedisConstant.BLOOM_SKU_ID);
                 if (filter.isExists()) {
                         log.info("redis已经装配好了sku布隆");
                         return filter;

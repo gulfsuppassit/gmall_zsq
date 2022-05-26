@@ -1,8 +1,8 @@
 package com.atguigu.gmall.product.config;
 
+import com.atguigu.gmall.cache.anno.EnableAutoCache;
 import com.atguigu.gmall.service.annotation.EnableAppGlobalExceptionHander;
 import com.atguigu.gmall.service.annotation.EnableMinio;
-import com.atguigu.gmall.service.annotation.EnableRedissonAndCache;
 import com.atguigu.gmall.service.annotation.EnableSwagger2Api;
 import com.atguigu.gmall.service.config.MybatisPlusConfig;
 import com.atguigu.gmall.service.config.ThreadPoolConfiguration;
@@ -17,7 +17,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @date 2022/5/18 20:02
  */
 @Configuration
-@EnableRedissonAndCache
+//@EnableRedissonAndCache
+//@EnableAutoCache
 @EnableTransactionManagement
 //@ComponentScan(basePackages = "com.atguigu.gmall")
 @Import({MybatisPlusConfig.class, ThreadPoolConfiguration.class})

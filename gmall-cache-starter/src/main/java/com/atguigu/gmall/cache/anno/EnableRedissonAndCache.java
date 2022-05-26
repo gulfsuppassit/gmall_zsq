@@ -1,8 +1,7 @@
-package com.atguigu.gmall.service.annotation;
+package com.atguigu.gmall.cache.anno;
 
-import com.atguigu.gmall.service.config.MinioConfig;
-import com.atguigu.gmall.service.config.RedissonConfiguration;
-import com.atguigu.gmall.service.service.impl.CacheServiceImpl;
+import com.atguigu.gmall.cache.config.RedissonConfiguration;
+import com.atguigu.gmall.cache.service.impl.CacheServiceImpl;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;

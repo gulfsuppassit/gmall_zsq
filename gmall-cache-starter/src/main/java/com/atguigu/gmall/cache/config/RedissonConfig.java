@@ -1,4 +1,4 @@
-package com.atguigu.gmall.service.config;
+package com.atguigu.gmall.cache.config;
 
 import lombok.Data;
 import org.redisson.Redisson;

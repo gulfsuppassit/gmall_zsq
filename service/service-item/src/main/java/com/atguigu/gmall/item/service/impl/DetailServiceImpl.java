@@ -1,5 +1,7 @@
 package com.atguigu.gmall.item.service.impl;
 
+import com.atguigu.gmall.cache.anno.Cache;
+import com.atguigu.gmall.cache.service.CacheService;
 import com.atguigu.gmall.common.result.Result;
 import com.atguigu.gmall.common.util.JSONs;
 import com.atguigu.gmall.feign.product.ProductFeignClient;
@@ -9,15 +11,13 @@ import com.atguigu.gmall.model.product.SkuInfo;
 import com.atguigu.gmall.model.product.SpuSaleAttr;
 import com.atguigu.gmall.model.to.ItemDetailTo;
 import com.atguigu.gmall.service.constant.RedisConst;
-import com.atguigu.gmall.service.service.CacheService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import lombok.extern.slf4j.Slf4j;
-import org.checkerframework.checker.index.qual.SameLen;
 import org.redisson.api.RBloomFilter;
+import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Service;
@@ -55,23 +55,79 @@ public class DetailServiceImpl implements DetailService {
     private StringRedisTemplate redisTemplate;
     @Autowired
     private RedissonClient redissonClient;
+
+
     /**
-     * 使用reidsson的分布式锁
+     * 直接查库 ,使用自定义注解+切面的方式完成缓存
+     * @param skuId
+     * @return
+     */
+    @Cache(cacheKey = RedisConst.SKU_DETAIL_CACHE_KEY_PREFIX + "#{#args[0]}",
+            bloomName = "skuIdBloom",bloomValue = "#{#args[0]}")
+    @Override
+    public ItemDetailTo getDetail(Long skuId) {
+        return getDetailFromDB(skuId);
+    }
+
+
+    /**
+     * 使用redisson的分布式锁
      * @param skuId:skuInfo的主键
      * @return :详情to
      */
-    /*@Override
-    public ItemDetailTo getDetail(Long skuId) {
+    public ItemDetailTo getDetailWithRedissonLock(Long skuId) {
+        ItemDetailTo data = cacheService.getData(RedisConst.SKU_DETAIL_CACHE_KEY_PREFIX + skuId, new TypeReference<ItemDetailTo>() {
+        });
+        if (data == null){
+            log.info("skuDetail:{}缓存没命中,正在准备回源查库,查库前需询问布隆库中有无此数据", skuId);
+            if (skuIdBloom.contains(skuId)) {
+                log.info("skuDetail:{}布隆说有,准备正式回源查库", skuId);
+                //布隆说有,那么就加锁,这次用redsson自带的分布式锁
+                RLock lock = redissonClient.getLock(RedisConst.SKU_DETAIL_LOCK_PREFIX);
+                log.info("给skuDetail:{}加锁",skuId);
+                if (lock.tryLock()) {//原子性尝试加锁(包括加锁过期,自动续期,当业务中断,锁自动销毁)
+                    log.info("给skuDetail:{}加锁成功",skuId);
+                    //加锁成功后回源查数据库,并将查出来的数据存入redis中
+                    data = getDetailFromDB(skuId);
+                    cacheService.save(RedisConst.SKU_DETAIL_CACHE_KEY_PREFIX + skuId, data);
+                    //强到锁之后释放锁
+                    log.info("给skuDetail:{}释放锁", skuId);
+                    try {
+                        Thread.sleep(3000000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    lock.unlock();
+                    return data;
+                }else{
+                    log.info("给skuDetail:{}加锁失败",skuId);
 
-        return null;
-    }*/
+                    //加锁失败,睡一秒,直接查缓存
+                    try {
+                        Thread.sleep(1000);
+                        data = cacheService.getData(RedisConst.SKU_DETAIL_CACHE_KEY_PREFIX + skuId, new TypeReference<ItemDetailTo>() {
+                        });
+                        return data;
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            log.info("skuDetail:{}布隆说没有,直接返回空,不回源",skuId);
+            return null;
+        }
+
+        log.info("skuDetail:{}缓存命中", skuId);
+        return data;
+
+    }
 
     /**
      * 使用redis原生的分布式锁
      * @param skuId
      * @return
      */
-    public ItemDetailTo getDetail(Long skuId){
+    public ItemDetailTo getDetailWithRedisNativeLock(Long skuId){
         ItemDetailTo data = cacheService.getData(RedisConst.SKU_DETAIL_CACHE_KEY_PREFIX + skuId, new TypeReference<ItemDetailTo>() {
         });
         if (data == null){
@@ -172,7 +228,6 @@ public class DetailServiceImpl implements DetailService {
 
         return itemDetailTo;
     }
-
 
 
 }

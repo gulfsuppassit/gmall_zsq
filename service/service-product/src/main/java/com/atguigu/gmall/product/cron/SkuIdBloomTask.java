@@ -1,14 +1,11 @@
 package com.atguigu.gmall.product.cron;
 
+import com.atguigu.gmall.cache.service.SkuBloomTask;
 import com.atguigu.gmall.product.service.SkuInfoService;
-import com.atguigu.gmall.product.service.impl.SkuInfoServiceImpl;
-import com.atguigu.gmall.service.service.SkuBloomTask;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBloomFilter;
-import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 

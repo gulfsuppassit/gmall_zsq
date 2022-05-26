@@ -1,5 +1,7 @@
 package com.atguigu.gmall.product.service.impl;
 
+import com.atguigu.gmall.cache.anno.Cache;
+import com.atguigu.gmall.cache.service.CacheService;
 import com.atguigu.gmall.service.constant.RedisConst;
 import com.atguigu.gmall.model.product.BaseCategory1;
 import com.atguigu.gmall.model.product.BaseCategory2;
@@ -10,9 +12,7 @@ import com.atguigu.gmall.product.mapper.BaseCategory1Mapper;
 import com.atguigu.gmall.product.mapper.BaseCategory2Mapper;
 import com.atguigu.gmall.product.mapper.BaseCategory3Mapper;
 import com.atguigu.gmall.product.service.BaseCategoryService;
-import com.atguigu.gmall.service.service.CacheService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.fasterxml.jackson.core.type.TypeReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -52,15 +52,10 @@ public class BaseCategoryServiceImpl implements BaseCategoryService {
         return baseCategory3Mapper.selectList(queryWrapper);
     }
 
+    @Cache(RedisConst.CATEGORY_KEY)
     @Override
     public List<CategoryAndChildTo> getCategoryAndChild() {
-        List<CategoryAndChildTo> cacheData = cacheService.getData(RedisConst.CATEGORY_KEY, new TypeReference<List<CategoryAndChildTo>>() {
-        });
-        if (cacheData == null){
-            cacheData = baseCategory1Mapper.getCategoryAndChild();
-            cacheService.save(RedisConst.CATEGORY_KEY,cacheData);
-        }
-        return cacheData;
+        return baseCategory1Mapper.getCategoryAndChild();
     }
 
     @Override

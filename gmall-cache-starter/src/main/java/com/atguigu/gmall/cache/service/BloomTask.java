@@ -1,4 +1,4 @@
-package com.atguigu.gmall.service.service;
+package com.atguigu.gmall.cache.service;
 
 import org.redisson.api.RBloomFilter;
 

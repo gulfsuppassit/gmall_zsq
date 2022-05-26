@@ -1,10 +1,9 @@
-package com.atguigu.gmall.service.service.impl;
+package com.atguigu.gmall.cache.service.impl;
 
-import com.atguigu.gmall.common.util.JSONs;
-import com.atguigu.gmall.service.service.CacheService;
+import com.atguigu.gmall.cache.service.CacheService;
+import com.atguigu.gmall.cache.util.JSONs;
 import com.fasterxml.jackson.core.type.TypeReference;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -23,7 +22,7 @@ public class CacheServiceImpl implements CacheService {
     @Override
     public <T> T getData(String key, TypeReference<T> typeReference) {
         String value = redisTemplate.opsForValue().get(key);
-        if (StringUtils.isEmpty(value)){
+        if (!StringUtils.isEmpty(value)){
             if ("no".equals(value)){
                 T t = JSONs.nullInstance(typeReference);
                 return t;
