@@ -26,6 +26,9 @@
         <swagger.version>2.7.0</swagger.version>
         <fastdfs.version>1.27.0.0</fastdfs.version>
         <lombok.version>1.18.10</lombok.version>
+        <shardingsphere.version>5.1.1</shardingsphere.version>
+<!--        <elasticsearch.version>2.7.0</elasticsearch.version>-->
+        <es.version>2.7.0</es.version>
     </properties>
 
 
@@ -38,13 +41,22 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -52,6 +64,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--elasticsearch-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-starter-data-elasticsearch</artifactId>-->
+<!--                <version>${elasticsearch.version}</version>-->
+<!--            </dependency>-->
 
             <!--mybatis-plus 持久层-->
             <dependency>

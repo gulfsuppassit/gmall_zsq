@@ -59,7 +59,7 @@ public class BaseCategoryServiceImpl implements BaseCategoryService {
         return baseCategory1Mapper.getCategoryAndChild();
     }
 
-    @Cache("categoryView")
+    @Cache("categoryView:#{#args[0]}")
     @Override
     public BaseCategoryView getCategoryView(Long skuId) {
 

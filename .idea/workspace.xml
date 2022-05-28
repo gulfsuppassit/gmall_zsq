@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f111c4ac-8ad9-489b-8a90-efd2bd79e97e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/aop/CacheAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cache-starter/src/main/java/com/atguigu/gmall/cache/aop/CacheAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/controller/DetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/controller/DetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/application.yml" afterDir="false" />
     </list>
     <list id="9d0c2651-94d6-423d-8e72-ee323b8c905d" name="getMethodAnnotation" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +131,7 @@
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service-product/src/main/resources/mapper" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -160,6 +162,7 @@
     </configuration>
     <configuration name="mall" type="CompoundRunConfigurationType">
       <toRun name="ItemApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ListApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ProductApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ServerGatewayApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="WebAllApplication" type="SpringBootApplicationConfigurationType" />
@@ -168,8 +171,9 @@
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="BloomTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShardingTest.readTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-product" />
+      <shortenClasspath name="MANIFEST" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.gmall.product.*" />
@@ -177,31 +181,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.atguigu.gmall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.gmall.product.BloomTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.gmall.product.ShardingTest" />
+      <option name="METHOD_NAME" value="readTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpelTest.spelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-item" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.gmall.item.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.gmall.item" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.gmall.item.SpelTest" />
-      <option name="METHOD_NAME" value="spelTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadPoolTest.completableFutureTest02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShardingTest.writeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-product" />
+      <shortenClasspath name="MANIFEST" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.gmall.product.*" />
@@ -209,8 +198,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.atguigu.gmall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.gmall.product.ThreadPoolTest" />
-      <option name="METHOD_NAME" value="completableFutureTest02" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.gmall.product.ShardingTest" />
+      <option name="METHOD_NAME" value="writeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -232,6 +221,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <shortenClasspath name="MANIFEST" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="service-item" />
       <extension name="coverage">
@@ -243,6 +239,23 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.item.ItemApplication" />
       <option name="VM_PARAMETERS" value="-Xmx100m -Xms100m" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="service-list" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gmall.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.list.ListApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m -Xms100m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,6 +271,7 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.product.ProductApplication" />
       <option name="VM_PARAMETERS" value="-Xmx100m -Xms100m" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -273,6 +287,7 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.gateway.ServerGatewayApplication" />
       <option name="VM_PARAMETERS" value="-Xmx100m -Xms100m" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -288,6 +303,13 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.web.WebAllApplication" />
       <option name="VM_PARAMETERS" value="-Xmx100m -Xms100m" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -295,22 +317,21 @@
     <list>
       <item itemvalue="Compound.mall" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
-      <item itemvalue="JUnit.BloomTest.test" />
-      <item itemvalue="JUnit.SpelTest.spelTest" />
+      <item itemvalue="JUnit.ThreadPoolTest.completableFutureTest03" />
+      <item itemvalue="JUnit.ShardingTest.writeTest" />
+      <item itemvalue="JUnit.ShardingTest.readTest" />
       <item itemvalue="Spring Boot.ProductApplication" />
       <item itemvalue="Spring Boot.WebAllApplication" />
       <item itemvalue="Spring Boot.ServerGatewayApplication" />
       <item itemvalue="Spring Boot.ItemApplication" />
-      <item itemvalue="JUnit.ThreadPoolTest.completableFutureTest02" />
-      <item itemvalue="JUnit.ThreadPoolTest.completableFutureTest03" />
+      <item itemvalue="Spring Boot.ListApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShardingTest.readTest" />
+        <item itemvalue="JUnit.ShardingTest.writeTest" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="JUnit.ThreadPoolTest.completableFutureTest03" />
-        <item itemvalue="JUnit.ThreadPoolTest.completableFutureTest02" />
-        <item itemvalue="JUnit.SpelTest.spelTest" />
-        <item itemvalue="JUnit.BloomTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -373,6 +394,8 @@
       <workItem from="1653352142249" duration="34497000" />
       <workItem from="1653438298422" duration="23433000" />
       <workItem from="1653528576944" duration="19846000" />
+      <workItem from="1653654757296" duration="1836000" />
+      <workItem from="1653699510464" duration="5070000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1652789462472</created>
