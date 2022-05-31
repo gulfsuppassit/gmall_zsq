@@ -9,8 +9,8 @@ import org.springframework.cloud.client.SpringCloudApplication;
  * @Description:
  * @date 2022/5/27 19:21
  */
-//@SpringCloudApplication
-@SpringBootApplication
+@SpringCloudApplication
+//@SpringBootApplication
 public class ListApplication {
 
     public static void main(String[] args) {

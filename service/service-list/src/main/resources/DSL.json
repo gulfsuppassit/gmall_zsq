@@ -1,0 +1,62 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "category3Id": {
+              "value": "61"
+            }
+          }
+        },
+        {
+          "term": {
+            "tmId": {
+              "value": "4"
+            }
+          }
+        },
+        {
+          "nested": {
+            "path": "attrs",
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "attrs.attrName": {
+                        "value": "机身存储"
+                      }
+                    }
+                  },
+                  {
+                    "term": {
+                      "attrs.attrValue": {
+                        "value": "128GB"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {"match": {
+          "title": "PLUS"
+        }}
+      ]
+    }
+  }
+, "sort": [
+  {
+    "price": {
+      "order": "asc"
+    }
+  }
+]
+, "from": 0
+, "size": 2
+, "highlight": {
+  "fields": {"title": {"pre_tags": "<span style='color:red'>","post_tags":"</span>"}}
+}
+}

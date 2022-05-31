@@ -8,8 +8,11 @@ import com.atguigu.gmall.model.product.BaseCategoryView;
 import com.atguigu.gmall.model.product.SkuInfo;
 import com.atguigu.gmall.model.product.SpuSaleAttr;
 import com.atguigu.gmall.model.to.ItemDetailTo;
+import com.atguigu.gmall.service.constant.RedisConst;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,6 +43,9 @@ public class DetailController {
         ItemDetailTo itemDetailTo = detailService.getDetail(skuId);
         BigDecimal data = productFeignClient.getPrice(skuId).getData();
         itemDetailTo.setPrice(data);
+        //todo 给es加分
+        //给redis中存一个zset,设置score,每次请求score加一,满一百,给es中skuInfo的分数加100
+        detailService.incrHotScore(skuId);
         return Result.ok(itemDetailTo);
     }
 

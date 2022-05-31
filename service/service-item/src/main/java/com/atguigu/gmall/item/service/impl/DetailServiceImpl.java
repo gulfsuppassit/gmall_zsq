@@ -4,6 +4,7 @@ import com.atguigu.gmall.cache.anno.Cache;
 import com.atguigu.gmall.cache.service.CacheService;
 import com.atguigu.gmall.common.result.Result;
 import com.atguigu.gmall.common.util.JSONs;
+import com.atguigu.gmall.feign.list.ListFeignClient;
 import com.atguigu.gmall.feign.product.ProductFeignClient;
 import com.atguigu.gmall.item.service.DetailService;
 import com.atguigu.gmall.model.product.BaseCategoryView;
@@ -55,6 +56,8 @@ public class DetailServiceImpl implements DetailService {
     private StringRedisTemplate redisTemplate;
     @Autowired
     private RedissonClient redissonClient;
+    @Autowired
+    private ListFeignClient listFeignClient;
 
 
     /**
@@ -68,6 +71,17 @@ public class DetailServiceImpl implements DetailService {
     public ItemDetailTo getDetail(Long skuId) {
         return getDetailFromDB(skuId);
     }
+
+    @Override
+    public void incrHotScore(Long skuId) {
+        //累积到100人以后增加一次，去redis中热度+1
+        Double score = redisTemplate.opsForZSet().incrementScore(RedisConst.SKU_HOTSCORE, skuId.toString(), 1.0);
+        if(score%100 == 0){
+            //远程调用ES
+            listFeignClient.updateHotScore(skuId,score.longValue());
+        }
+    }
+
 
 
     /**

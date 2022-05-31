@@ -7,6 +7,7 @@ import com.atguigu.gmall.service.annotation.EnableSwagger2Api;
 import com.atguigu.gmall.service.config.MybatisPlusConfig;
 import com.atguigu.gmall.service.config.ThreadPoolConfiguration;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -24,6 +25,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Import({MybatisPlusConfig.class, ThreadPoolConfiguration.class})
 @EnableAppGlobalExceptionHander
 @EnableMinio
+@EnableFeignClients("com.atguigu.gmall.feign.list")
 @EnableSwagger2Api
 @MapperScan(basePackages = "com.atguigu.gmall.product.mapper")
 public class ProductConfig {

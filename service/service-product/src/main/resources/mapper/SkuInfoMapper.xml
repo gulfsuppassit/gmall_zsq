@@ -29,4 +29,10 @@
     <select id="getSkuInfoIds" resultType="java.lang.Long">
         select id from sku_info
     </select>
+    <select id="getBaseAttrNameAndValue" resultType="com.atguigu.gmall.model.list.SearchAttr">
+        select bai.id attrId,bav.value_name attrValue,bai.attr_name attrName from sku_attr_value sav
+        left join base_attr_info bai on sav.attr_id = bai.id
+        left join base_attr_value bav on sav.value_id = bav.id
+        where sku_id = #{skuId}
+    </select>
 </mapper>

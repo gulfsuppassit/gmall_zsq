@@ -18,6 +18,7 @@ public class RedisConst {
     // 定义变量，记录空对象的缓存过期时间
     public static final long SKUKEY_TEMPORARY_TIMEOUT = 10 * 60;
     public static final String BLOOM_SKU_ID = "skuid";
+    public static final String SKU_HOTSCORE = "sku:hotscore:";
 
     //单位：秒 尝试获取锁的最大等待时间
 //    public static final long SKULOCK_EXPIRE_PX1 = 1;

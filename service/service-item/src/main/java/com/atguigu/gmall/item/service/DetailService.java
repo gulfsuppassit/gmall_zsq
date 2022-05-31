@@ -14,4 +14,5 @@ public interface DetailService {
 
     public ItemDetailTo getDetail(Long skuId);
 
+    void incrHotScore(Long skuId);
 }
