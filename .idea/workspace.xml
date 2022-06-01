@@ -5,37 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f111c4ac-8ad9-489b-8a90-efd2bd79e97e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-05-30T111424.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service-feign-client/src/main/java/com/atguigu/gmall/feign/list/ListFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/model/list/SearchResponsePropVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/main/java/com/atguigu/gmall/list/bean/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/main/java/com/atguigu/gmall/list/dao/GoodsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/main/java/com/atguigu/gmall/list/dao/HelloDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/main/java/com/atguigu/gmall/list/rpc/GoodsRpcController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/main/java/com/atguigu/gmall/list/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/main/java/com/atguigu/gmall/list/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/main/resources/DSL.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/test/java/com/atguigu/gmall/list/ESDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/test/java/com/atguigu/gmall/list/ESServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-list/src/test/java/com/atguigu/gmall/list/ESTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/controller/ListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/result/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/result/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/constant/RedisConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/constant/RedisConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/model/list/SearchResponseVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/model/list/SearchResponseVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/config/ItemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/config/ItemConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/model/user/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/model/user/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/controller/DetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/controller/DetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/DetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/DetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/DetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/DetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-list/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-list/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-list/src/main/java/com/atguigu/gmall/list/ListApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-list/src/main/java/com/atguigu/gmall/list/ListApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-list/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-list/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/config/ProductConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/config/ProductConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SkuInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SkuInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SkuInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SkuInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SkuInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SkuInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SkuInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SkuInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/web-all/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <list id="9d0c2651-94d6-423d-8e72-ee323b8c905d" name="getMethodAnnotation" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +137,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../guigu/第五阶段/尚品汇/视屏/day10-检索-上/笔记/gmall-parent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service-user/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="ReactorSettings">
@@ -165,6 +148,7 @@
       <recent name="com.atguigu.gmall.product.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\gmall-parent\service\service-user\src\main\resources" />
       <recent name="D:\IdeaProjects\gmall-parent\service\service-product\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -185,14 +169,19 @@
       <method v="2" />
     </configuration>
     <configuration name="mall" type="CompoundRunConfigurationType">
+      <toRun name="CartApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ItemApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ListApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ProductApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ServerGatewayApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="UserApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="WebAllApplication" type="SpringBootApplicationConfigurationType" />
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="ESTest.paramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -229,43 +218,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShardingTest.readTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-product" />
-      <shortenClasspath name="MANIFEST" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.gmall.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.gmall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.gmall.product.ShardingTest" />
-      <option name="METHOD_NAME" value="readTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShardingTest.writeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-product" />
-      <shortenClasspath name="MANIFEST" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.gmall.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.gmall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.gmall.product.ShardingTest" />
-      <option name="METHOD_NAME" value="writeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="MANIFEST" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="service-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gmall.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.cart.CartApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -334,6 +304,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="service-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gmall.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.user.UserApplication" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebAllApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="web-all" />
       <extension name="coverage">
@@ -359,8 +343,7 @@
     <list>
       <item itemvalue="Compound.mall" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
-      <item itemvalue="JUnit.ShardingTest.writeTest" />
-      <item itemvalue="JUnit.ShardingTest.readTest" />
+      <item itemvalue="HTTP Request.generated-requests | #6" />
       <item itemvalue="JUnit.ESTest.test01" />
       <item itemvalue="JUnit.ESTest.paramTest" />
       <item itemvalue="Spring Boot.ProductApplication" />
@@ -368,14 +351,15 @@
       <item itemvalue="Spring Boot.ServerGatewayApplication" />
       <item itemvalue="Spring Boot.ItemApplication" />
       <item itemvalue="Spring Boot.ListApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.CartApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #6" />
         <item itemvalue="JUnit.ESTest.paramTest" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="JUnit.ESTest.test01" />
-        <item itemvalue="JUnit.ShardingTest.readTest" />
-        <item itemvalue="JUnit.ShardingTest.writeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -443,7 +427,8 @@
       <workItem from="1653788489444" duration="9515000" />
       <workItem from="1653870368692" duration="28114000" />
       <workItem from="1653956536491" duration="12782000" />
-      <workItem from="1653976364480" duration="1752000" />
+      <workItem from="1653976364480" duration="17289000" />
+      <workItem from="1654043009885" duration="10045000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1652789462472</created>
@@ -522,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653719733893</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="第7次提交:完成list.gmall.com页面展示">
+      <created>1653983184548</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653983184548</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +535,39 @@
     <MESSAGE value="第4次提交" />
     <MESSAGE value="第5次提交:将缓存封装成一个starter,只需到导入自定义starter就可以使用@Cache" />
     <MESSAGE value="第6次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第6次提交" />
+    <MESSAGE value="第7次提交:完成list.gmall.com页面展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="第7次提交:完成list.gmall.com页面展示" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/controller/DetailController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/DetailServiceImpl.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/DetailServiceImpl.java</url>
+          <line>203</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/rpc/SkuInfoRpcController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SpuSaleAttrServiceImpl.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

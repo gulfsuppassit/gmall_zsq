@@ -43,7 +43,6 @@ public class DetailController {
         ItemDetailTo itemDetailTo = detailService.getDetail(skuId);
         BigDecimal data = productFeignClient.getPrice(skuId).getData();
         itemDetailTo.setPrice(data);
-        //todo 给es加分
         //给redis中存一个zset,设置score,每次请求score加一,满一百,给es中skuInfo的分数加100
         detailService.incrHotScore(skuId);
         return Result.ok(itemDetailTo);

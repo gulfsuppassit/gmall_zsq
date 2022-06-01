@@ -8,5 +8,6 @@ spring:
 feign:
   client:
     config:
-      default:
-        read-timeout: 50000
+      service-item:
+        connection-timeout: 5000
+        read-timeout: 100000

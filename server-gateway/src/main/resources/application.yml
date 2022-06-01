@@ -15,7 +15,35 @@ spring:
           uri: lb://service-product
           predicates:
             - Path=/admin/product/**
+
+        - id: lb_test
+          uri: lb://service-item
+          predicates:
+            - Path=/redis/incr
+
+        - id: user_route
+          uri: lb://service-user
+          predicates:
+            - Path=/api/user/**
+
         - id: web_all
           uri: lb://web-all
           predicates:
             - Host=**.gmall.com,gmall.com
+  redis:
+    host: 192.168.220.130
+    password: MewGulf1314
+
+
+app:
+  auth:
+    anyoneurls:  #所有人无需登录就能访问的url
+      - /js/**
+      - /css/**
+      - /img/**
+      - /static/**
+    denyurls:  #任何情况下都拒绝访问。
+      - /rpc/inner/**
+    authurls: #必须登录才能访问的请求
+      - /myOrder.html
+    loginPage: http://passport.gmall.com/login.html

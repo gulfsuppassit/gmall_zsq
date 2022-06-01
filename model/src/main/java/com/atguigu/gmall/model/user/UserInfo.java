@@ -45,4 +45,7 @@ public class UserInfo extends BaseEntity {
     @TableField("user_level")
     private String userLevel;
 
+    @ApiModelProperty(value = "用于验证用户的字段")
+    @TableField(exist = false)
+    private String ipAddress;
 }

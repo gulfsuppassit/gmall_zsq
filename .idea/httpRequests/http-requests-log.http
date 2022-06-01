@@ -1,3 +1,11 @@
+POST http://localhost/api/user/passport/login
+application/json:
+{loginName: "admin", passwd: "111111"}
+
+<> 2022-05-31T194029.400.html
+
+###
+
 GET http://localhost:7000/admin/product/rebuild
 
 <> 2022-05-30T111424.200.json
