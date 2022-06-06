@@ -16,13 +16,13 @@ import static java.lang.System.out;
  * @Description:
  * @date 2022/5/23 18:56
  */
-@SpringBootTest
+//@SpringBootTest
 public class ThreadPoolTest {
 
-    @Autowired
+//    @Autowired
     private ThreadPoolExecutor corePool;
 
-    @Test
+//    @Test
     public void threadPoolTest() throws ExecutionException, InterruptedException {
 //       corePool.execute(()->{
 //           System.out.println(Thread.currentThread().getName()+":hello world");
@@ -38,7 +38,7 @@ public class ThreadPoolTest {
 
     }
 
-    @Test
+//    @Test
     public void completableFutureTest(){
         CompletableFuture.supplyAsync(()->{
             int i = 1+1;
@@ -47,7 +47,7 @@ public class ThreadPoolTest {
         });
     }
 
-    @Test
+//    @Test
     public void completableFutureTest02() throws ExecutionException, InterruptedException {
         CompletableFuture<Void> future = CompletableFuture.supplyAsync(() -> {
             int num = 1 + 1;
@@ -59,7 +59,7 @@ public class ThreadPoolTest {
         Void unused = future.get();
     }
 
-    @Test
+//    @Test
     public void completableFutureTest03() throws ExecutionException, InterruptedException {
         CompletableFuture<Object> objectCompletableFuture = CompletableFuture.supplyAsync(() -> {
             int num = 1 + 1;

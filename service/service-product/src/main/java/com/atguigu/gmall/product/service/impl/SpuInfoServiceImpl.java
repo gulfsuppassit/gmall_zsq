@@ -40,19 +40,31 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoMapper, SpuInfo>
         baseMapper.insert(spuInfo);
         //保存spu图片信息
         List<SpuImage> spuImageList = spuInfo.getSpuImageList();
-        spuImageList.forEach(item-> item.setSpuId(spuInfo.getId()));
+        for (SpuImage spuImage : spuImageList) {
+            spuImage.setSpuId(spuInfo.getId());
+        }
+//        spuImageList.forEach(item-> item.setSpuId(spuInfo.getId()));
         spuImageService.saveBatch(spuImageList);
         //保存spu销售属性和属性值信息
         List<SpuSaleAttr> spuSaleAttrList = spuInfo.getSpuSaleAttrList();
-        spuSaleAttrList.forEach(item->{
-            item.setSpuId(spuInfo.getId());
-            List<SpuSaleAttrValue> spuSaleAttrValueList = item.getSpuSaleAttrValueList();
+        for (SpuSaleAttr spuSaleAttr : spuSaleAttrList) {
+            spuSaleAttr.setSpuId(spuInfo.getId());
+            List<SpuSaleAttrValue> spuSaleAttrValueList = spuSaleAttr.getSpuSaleAttrValueList();
             for (SpuSaleAttrValue spuSaleAttrValue : spuSaleAttrValueList) {
                 spuSaleAttrValue.setSpuId(spuInfo.getId());
-                spuSaleAttrValue.setSaleAttrName(item.getSaleAttrName());
+                spuSaleAttrValue.setSaleAttrName(spuSaleAttr.getSaleAttrName());
             }
             spuSaleAttrValueService.saveBatch(spuSaleAttrValueList);
-        });
+        }
+//        spuSaleAttrList.forEach(item->{
+//            item.setSpuId(spuInfo.getId());
+//            List<SpuSaleAttrValue> spuSaleAttrValueList = item.getSpuSaleAttrValueList();
+//            for (SpuSaleAttrValue spuSaleAttrValue : spuSaleAttrValueList) {
+//                spuSaleAttrValue.setSpuId(spuInfo.getId());
+//                spuSaleAttrValue.setSaleAttrName(item.getSaleAttrName());
+//            }
+//            spuSaleAttrValueService.saveBatch(spuSaleAttrValueList);
+//        });
         spuSaleAttrService.saveBatch(spuSaleAttrList);
     }
 }

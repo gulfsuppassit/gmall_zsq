@@ -1,0 +1,5 @@
+server:
+  port: 13000
+spring:
+  profiles:
+    include: sharding

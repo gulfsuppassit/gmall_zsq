@@ -12,7 +12,6 @@ public enum ResultCodeEnum {
     SUCCESS(200,"成功"),
     FAIL(201, "失败"),
     SERVICE_ERROR(2012, "服务异常"),
-
     PAY_RUN(205, "支付中"),
 
     LOGIN_AUTH(208, "未登陆"),
@@ -29,7 +28,9 @@ public enum ResultCodeEnum {
     COUPON_GET(220, "优惠券已经领取"),
     COUPON_LIMIT_GET(221, "优惠券已发放完毕"),
     LOGIN_ERROR(222, "登录失败"),
-    FORBIDDEN(223, "拒绝访问");
+    FORBIDDEN(223, "拒绝访问"),
+    CART_OVERFLOW(300,"购物车数量溢出"),
+    CART_MERGE_OVERFLOW(301, "购物车合并数量溢出,请删除部分商品");
 
     private Integer code;
 

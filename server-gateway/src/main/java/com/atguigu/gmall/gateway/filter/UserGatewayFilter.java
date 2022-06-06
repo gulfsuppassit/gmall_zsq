@@ -104,7 +104,18 @@ public class UserGatewayFilter implements GlobalFilter {
         String token = getToken(request);
         if (StringUtils.isEmpty(token)){
             //前端没带,没带就没带,直接放行
-            return chain.filter(exchange);
+            //放行前,将userTempId也向下透传
+            ServerHttpRequest oldRequest = exchange.getRequest();
+//            HttpCookie userTempId = oldRequest.getCookies().getFirst("userTempId");
+            String userTempId = getUserTempId(request);
+            ServerHttpRequest newRequest = oldRequest.mutate()
+                    .header("UserTempId", userTempId)
+                    .build();
+            ServerWebExchange newExchange = exchange.mutate()
+                    .request(newRequest)
+                    .response(exchange.getResponse())
+                    .build();
+            return chain.filter(newExchange);
         }else{
             //前端带了,但是带错了,要么不带,带了就要带对
             boolean verifyToken = verifyToken(request);
@@ -116,7 +127,7 @@ public class UserGatewayFilter implements GlobalFilter {
                 ServerHttpRequest originRequest = exchange.getRequest();
                 UserInfo userInfo = getTokenFromRedis(request, token);
                 ServerHttpRequest newRequest = originRequest.mutate()
-                        .header("userId", userInfo.getId().toString())
+                        .header("UserId", userInfo.getId().toString())
                         .build();
                 ServerWebExchange newExchange = exchange.mutate()
                         .request(newRequest)
@@ -127,6 +138,23 @@ public class UserGatewayFilter implements GlobalFilter {
         }
 //        return chain.filter(exchange);
     }
+
+    private String getUserTempId(ServerHttpRequest request) {
+        String userTempId = "";
+
+        HttpCookie cookie = request.getCookies().getFirst("userTempId");
+        //有这个cookie，说明前端把token放到的cookie位置，给我们带来了
+        if (cookie != null) {
+            userTempId = cookie.getValue();
+        } else {
+            //前端没有放在cookie位置
+            String headerValue = request.getHeaders().getFirst("userTempId");
+            userTempId = headerValue;
+        }
+
+        return userTempId;
+    }
+
 //http://passport.gmall.com/login.html?originUrl=http://order.gmall.com/myOrder.html
     private Mono<Void> locationToLoginPage(ServerWebExchange exchange) {
         ServerHttpResponse response = exchange.getResponse();

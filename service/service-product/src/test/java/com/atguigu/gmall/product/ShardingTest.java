@@ -13,20 +13,20 @@ import javax.annotation.Resource;
  * @Description:
  * @date 2022/5/27 16:20
  */
-@SpringBootTest
+//@SpringBootTest
 public class ShardingTest {
 
-    @Resource
+//    @Resource
     private BaseCategory1Mapper baseCategory1Mapper;
 
-    @Test
+//    @Test
     public void writeTest(){
         BaseCategory1 baseCategory1 = new BaseCategory1();
         baseCategory1.setName("哈哈");
         baseCategory1Mapper.insert(baseCategory1);
     }
 
-    @Test
+//    @Test
     public void readTest(){
         BaseCategory1 baseCategory1 = baseCategory1Mapper.selectById(18);
         System.out.println("第1次"+baseCategory1);

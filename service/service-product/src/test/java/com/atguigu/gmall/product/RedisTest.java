@@ -10,13 +10,13 @@ import org.springframework.data.redis.core.RedisTemplate;
  * @Description:
  * @date 2022/5/23 21:09
  */
-@SpringBootTest
+//@SpringBootTest
 public class RedisTest {
 
-    @Autowired
+//    @Autowired
     private RedisTemplate redisTemplate;
 
-    @Test
+//    @Test
     public void test1(){
         redisTemplate.opsForValue().set("hello", "value");
         Object hello = redisTemplate.opsForValue().get("hello");

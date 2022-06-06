@@ -1,0 +1,97 @@
+spring:
+  shardingsphere:
+    datasource:
+      names: write00,write01,read1-1,read1-2,read2-1,read2-2  #指定所有数据源的名字
+      write00:
+        type: com.zaxxer.hikari.HikariDataSource #数据源类型
+        url: jdbc:mysql://192.168.220.130:3306/gmall_order_0?useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+      write01:
+        type: com.zaxxer.hikari.HikariDataSource #数据源类型
+        url: jdbc:mysql://192.168.220.130:3306/gmall_order_1?useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+
+      read1-1:
+        type: com.zaxxer.hikari.HikariDataSource #数据源类型
+        url: jdbc:mysql://192.168.220.130:3307/gmall_order_0?useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+      read1-2:
+        type: com.zaxxer.hikari.HikariDataSource #数据源类型
+        url: jdbc:mysql://192.168.220.130:3307/gmall_order_1?useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+
+      read2-1:
+        type: com.zaxxer.hikari.HikariDataSource #数据源类型
+        url: jdbc:mysql://192.168.220.130:3308/gmall_order_0?useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+      read2-2:
+        type: com.zaxxer.hikari.HikariDataSource #数据源类型
+        url: jdbc:mysql://192.168.220.130:3308/gmall_order_1?useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+
+
+    rules:
+      readwrite-splitting:  #配置读写分离规则
+        data-sources:
+          ds_0:   #给一套集群起个名
+            type: static
+            props:
+              auto-aware-data-source-name: write00
+              write-data-source-name: write00
+              read-data-source-names: read1-1,read1-2
+            load-balancer-name: read-random
+
+          ds_1: #给一套集群起个名
+            type: static
+            props:
+              auto-aware-data-source-name: write01
+              write-data-source-name: write01
+              read-data-source-names: read2-1,read2-2
+            load-balancer-name: read-random
+
+        load-balancers:
+          read-random:
+            type: ROUND_ROBIN #轮询负载均衡
+      #配置分片规则
+      sharding:
+        defaultDatabaseStrategy: # 分库策略，缺省表示使用默认分库策略，以下的分片策略只能选其一
+          standard: # 用于单分片键的标准分片场景
+            shardingColumn: user_id # 分片列名称
+            shardingAlgorithmName: user-id-db-shard # 分片算法名称
+
+        tables:
+          order_info:
+            actualDataNodes: write0$->{0..1}.order_info_$->{1..3} # 由数据源名 + 表名组成（参考 Inline 语法规则）
+
+            tableStrategy: # 分表策略，同分库策略
+              standard: # 用于单分片键的标准分片场景
+                shardingColumn: user_id # 分片列名称
+                shardingAlgorithmName: user-id-table-shard # 分片算法名称
+
+        shardingAlgorithms:
+          user-id-db-shard:
+            type: INLINE  # 分片算法类型
+            props: # 分片算法属性配置
+              algorithm-expression: write0$->{user_id%2}
+          user-id-table-shard:
+            type: INLINE  # 分片算法类型
+            props: # 分片算法属性配置
+              algorithm-expression: order_info_$->{user_id % 3 + 1}
+
+
+
+    props:
+      sql-show: true
+      sql-simple: true

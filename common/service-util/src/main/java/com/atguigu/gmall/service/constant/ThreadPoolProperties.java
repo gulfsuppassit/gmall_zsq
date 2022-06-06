@@ -16,10 +16,10 @@ import java.util.concurrent.TimeUnit;
 @Data
 @ConfigurationProperties(prefix = "app.threadpool")
 public class ThreadPoolProperties {
-    private int corePoolSize;
-    private int maximumPoolSize;
-    private long keepAliveTime;
+    private int corePoolSize = 8;
+    private int maximumPoolSize = 16;
+    private long keepAliveTime = 1;
     private TimeUnit unit=TimeUnit.MINUTES;
-    private int queueNumber;
+    private int queueNumber = 1000;
     private RejectedExecutionHandler handler=new ThreadPoolExecutor.CallerRunsPolicy();
 }

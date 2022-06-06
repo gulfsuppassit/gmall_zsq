@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service-util</artifactId>
+    <description>系统通用的业务工具类</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,14 +19,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.atguigu.gmall</groupId>
-            <artifactId>common-util</artifactId>
-            <version>1.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
+
+
         <dependency>
-            <groupId>com.atguigu.gmall</groupId>
-            <artifactId>model</artifactId>
-            <version>1.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
         <!-- redis -->
@@ -54,6 +56,8 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <scope>provided</scope>
         </dependency>
+
+        <!--        依赖minio，进行对象存储-->
         <dependency>
             <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
@@ -61,17 +65,10 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.atguigu.gmall</groupId>
+            <artifactId>common-util</artifactId>
+            <version>1.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-        </dependency>
-
     </dependencies>
-
 
 </project>

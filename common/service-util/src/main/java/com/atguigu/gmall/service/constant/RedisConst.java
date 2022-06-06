@@ -1,5 +1,7 @@
 package com.atguigu.gmall.service.constant;
 
+import java.time.Duration;
+
 /**
  * Redis常量配置类
  * set name admin
@@ -34,6 +36,9 @@ public class RedisConst {
     public static final String USER_LOGIN_KEY_PREFIX = "user:login:";
     //    public static final String userinfoKey_suffix = ":info";
     public static final int USERKEY_TIMEOUT = 60 * 60 * 24 * 7;
+    public static final String USER_CART_KEY = "user:cart:";
+    public static final Duration TEMP_CART_TIMEOUT = Duration.ofDays(90);
+    public static final Long CART_SIZE_LIMIT = 200L;
 
     //秒杀商品前缀
 /*    public static final String SECKILL_GOODS = "seckill:goods";
