@@ -10,6 +10,7 @@
         <module name="server-gateway" />
         <module name="common-util" />
         <module name="service-feign-client" />
+        <module name="ware-manage" />
         <module name="service-list" />
         <module name="service-util" />
         <module name="service-order" />
@@ -39,6 +40,7 @@
       <module name="service-product" options="-parameters" />
       <module name="service-user" options="-parameters" />
       <module name="service-util" options="-parameters" />
+      <module name="ware-manage" options="-parameters" />
       <module name="web-all" options="-parameters" />
     </option>
   </component>

@@ -1,5 +1,6 @@
 package com.atguigu.gmall.web;
 
+import com.atguigu.gmall.service.annotation.EnableFeignAutoHeaderInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -9,6 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Description:
  * @date 2022/5/21 9:30
  */
+@EnableFeignAutoHeaderInterceptor
 @EnableFeignClients(basePackages = "com.atguigu.gmall.feign")
 @SpringCloudApplication
 public class WebAllApplication {

@@ -39,6 +39,7 @@ public class RedisConst {
     public static final String USER_CART_KEY = "user:cart:";
     public static final Duration TEMP_CART_TIMEOUT = Duration.ofDays(90);
     public static final Long CART_SIZE_LIMIT = 200L;
+    public static final String NO_REPEAT_TOKEN = "norepeat:token:";
 
     //秒杀商品前缀
 /*    public static final String SECKILL_GOODS = "seckill:goods";

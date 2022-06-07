@@ -86,4 +86,10 @@ public interface CartService {
      */
     void deleteCart(String cartKey);
 
+    /**
+     * 获取选中的购物车项
+     * @return
+     */
+    List<CartInfo> getCheckedItems();
+
 }

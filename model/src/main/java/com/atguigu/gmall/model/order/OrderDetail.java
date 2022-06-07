@@ -62,4 +62,9 @@ public class OrderDetail extends BaseEntity {
     @TableField("split_coupon_amount")
     private BigDecimal splitCouponAmount;
 
+    @ApiModelProperty(value = "用户id,用于分片")
+    @TableField("user_id")
+    private Long userId;
+
+
 }

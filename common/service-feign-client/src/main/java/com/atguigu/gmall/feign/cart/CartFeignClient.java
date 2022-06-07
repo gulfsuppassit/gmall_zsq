@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.List;
+
 /**
  * @author zsq
  * @Description:
@@ -23,4 +25,11 @@ public interface CartFeignClient {
 
     @GetMapping("/deleteChecked")
     public Result deleteChecked();
+
+    /**
+     * 获取已经选中的购物车项
+     * @return
+     */
+    @GetMapping("/getCheckedItems")
+    public Result<List<CartInfo>> getCheckedItems();
 }

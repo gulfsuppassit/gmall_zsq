@@ -82,6 +82,11 @@ public class CartServiceImpl implements CartService {
         return cartInfo;
     }
 
+    /**
+     * 获取所有购物车项
+     * 内部自动判断是否需要合并,用什么key
+     * @return
+     */
     @Override
     public List<CartInfo> getCartList() {
         BoundHashOperations<String, String, String> userCart = getUserCart();
@@ -108,7 +113,7 @@ public class CartServiceImpl implements CartService {
             updatePriceBatch(userKey);
             return infos;
         }else{
-            //2.如果不需要合并[没登录 只有UserTempId][登录了,但是临时鼓舞车没东西][登录了,里面是购物车被合并过了]
+            //2.如果不需要合并[没登录 只有UserTempId][登录了,但是临时购物车没东西][登录了,里面是购物车被合并过了]
             //获取键
             String cartKey = determinCartKey();
             //获取所有该用户的所有商品
@@ -122,7 +127,7 @@ public class CartServiceImpl implements CartService {
     }
 
     /**
-     * 批量更新价格
+     * 开新线程批量更新价格
      * @param cartKey
      */
     private void updatePriceBatch(String cartKey) {
@@ -134,12 +139,20 @@ public class CartServiceImpl implements CartService {
         }),corePool);
     }
 
+    /**
+     * 真正更新价格
+     */
     public void updateCartInfoPrice(String cartKey, Long skuId, BigDecimal price) {
         CartInfo cart = getCart(skuId, cartKey);
         cart.setSkuPrice(price);
         addCartInfo(skuId, cart, cartKey);
     }
 
+    /**
+     * 传入cartKey真正获取所有购物车项
+     * @param cartKey
+     * @return
+     */
     private List<CartInfo> getInfos(String cartKey) {
         BoundHashOperations<String, String, String> ops = redisTemplate.boundHashOps(cartKey);
         List<String> values = ops.values();
@@ -152,6 +165,11 @@ public class CartServiceImpl implements CartService {
         return cartInfos;
     }
 
+    /**
+     * 根据商品id,修改购物车中商品数量
+     * @param skuId
+     * @param num
+     */
     @Override
     public void addToCart(Long skuId, Integer num) {
         String cartKey = determinCartKey();
@@ -161,6 +179,11 @@ public class CartServiceImpl implements CartService {
         addCartInfo(skuId,cartInfo, cartKey);
     }
 
+    /**
+     * 修改商品选中状态
+     * @param skuId
+     * @param isChecked
+     */
     @Override
     public void checkCart(Long skuId, Integer isChecked) {
         String cartKey = determinCartKey();
@@ -169,12 +192,18 @@ public class CartServiceImpl implements CartService {
         addCartInfo(skuId, cartInfo, cartKey);
     }
 
+    /*
+    根据商品id,从购物车中删除该商品
+     */
     @Override
     public void deleteCart(Long skuId) {
         String cartKey = determinCartKey();
         deleteCartBySkuId(skuId, cartKey);
     }
 
+    /**
+     * 删除选中商品
+     */
     @Override
     public void deleteChecked() {
         String cartKey = determinCartKey();
@@ -186,11 +215,32 @@ public class CartServiceImpl implements CartService {
     }
 
 
+    /**
+     * 删除购物车
+     * @param cartKey
+     */
     @Override
     public void deleteCart(String cartKey) {
         redisTemplate.delete(cartKey);
     }
 
+    /**
+     * 获取选中购物车项
+     * @return
+     */
+    @Override
+    public List<CartInfo> getCheckedItems() {
+        List<CartInfo> infos = getCartList();
+        List<CartInfo> cartInfoList = infos.stream()
+                .filter(cartInfo -> cartInfo.getIsChecked() == 1)
+                .collect(Collectors.toList());
+        return cartInfoList;
+    }
+
+    /**
+     * 获取登录后所用的key
+     * @return
+     */
     private String getUserKey(){
         UserAuthTO userAuth = AuthUtil.getUserAuth();
         Long userId = userAuth.getUserId();
@@ -201,6 +251,10 @@ public class CartServiceImpl implements CartService {
         return null;
     }
 
+    /**
+     * 获取临时key
+     * @return
+     */
     private String getTempKey(){
         UserAuthTO userAuth = AuthUtil.getUserAuth();
         String userTempId = userAuth.getUserTempId();
@@ -210,6 +264,11 @@ public class CartServiceImpl implements CartService {
         }
         return null;
     }
+
+    /**
+     * 获取用户购物车
+     * @return
+     */
     private BoundHashOperations<String, String, String> getUserCart(){
         UserAuthTO userAuth = AuthUtil.getUserAuth();
         Long userId = userAuth.getUserId();
@@ -220,6 +279,10 @@ public class CartServiceImpl implements CartService {
         return null;
     }
 
+    /**
+     * 获取临时购物车
+     * @return
+     */
     private BoundHashOperations<String, String, String> getTempCart(){
         UserAuthTO userAuth = AuthUtil.getUserAuth();
         String userTempId = userAuth.getUserTempId();
@@ -230,20 +293,43 @@ public class CartServiceImpl implements CartService {
         return null;
     }
 
+    /**
+     * 根据商品id批量删除购物车项
+     * @param cartKey
+     * @param skuId
+     */
     private void deleteCartBySkuId(String cartKey, Object... skuId) {
         BoundHashOperations<String, String, String> ops = redisTemplate.boundHashOps(cartKey);
         ops.delete(skuId);
     }
+
+    /**
+     * 删除一个购物车项
+     * @param skuId
+     * @param cartKey
+     */
     private void deleteCartBySkuId(Long skuId, String cartKey) {
         BoundHashOperations<String, String, String> ops = redisTemplate.boundHashOps(cartKey);
         ops.delete(skuId.toString());
     }
 
+    /**
+     * 添加购物车项
+     * @param skuId
+     * @param cartInfo
+     * @param cartKey
+     */
     private void addCartInfo(Long skuId, CartInfo cartInfo, String cartKey) {
         BoundHashOperations<String, String, String> ops = redisTemplate.boundHashOps(cartKey);
         ops.put(skuId.toString(), JSONs.toStr(cartInfo));
     }
 
+    /**
+     * 获取单个购物车项
+     * @param skuId
+     * @param cartKey
+     * @return
+     */
     private CartInfo getCart(Long skuId, String cartKey) {
         BoundHashOperations<String, String, String> ops = redisTemplate.boundHashOps(cartKey);
         String json = ops.get(skuId.toString());
@@ -251,6 +337,13 @@ public class CartServiceImpl implements CartService {
         });
     }
 
+    /**
+     * 保存购物车项
+     * @param skuId
+     * @param skuNum
+     * @param cartKey
+     * @return
+     */
     private CartInfo saveSkuToCart(Long skuId, Integer skuNum, String cartKey) {
 
         BoundHashOperations<String, String, String> cart = redisTemplate.boundHashOps(cartKey);
@@ -274,6 +367,11 @@ public class CartServiceImpl implements CartService {
         }
     }
 
+    /**
+     * 封装购物车项
+     * @param skuInfo
+     * @return
+     */
     private CartInfo convertSkuInfoToCartItem(SkuInfo skuInfo) {
         CartInfo cartInfo = new CartInfo();
         cartInfo.setId(skuInfo.getId());
@@ -293,6 +391,10 @@ public class CartServiceImpl implements CartService {
         return cartInfo;
     }
 
+    /**
+     * 确定用哪个键
+     * @return
+     */
     private String determinCartKey() {
         UserAuthTO userAuth = AuthUtil.getUserAuth();
         Long userId = userAuth.getUserId();

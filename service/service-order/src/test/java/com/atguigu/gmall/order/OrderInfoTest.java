@@ -25,7 +25,7 @@ public class OrderInfoTest {
     private OrderInfoMapper orderInfoMapper;
 
 //    @Transactional
-    @Test
+//    @Test
     public void addTest(){
         OrderInfo orderInfo = new OrderInfo();
         orderInfo.setConsignee("23");

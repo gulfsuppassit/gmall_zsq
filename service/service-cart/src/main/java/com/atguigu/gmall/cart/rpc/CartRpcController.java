@@ -6,6 +6,8 @@ import com.atguigu.gmall.model.cart.CartInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @author zsq
  * @Description:
@@ -36,6 +38,12 @@ public class CartRpcController {
     public Result deleteChecked(){
         cartService.deleteChecked();
         return Result.ok();
+    }
+
+    @GetMapping("/getCheckedItems")
+    public Result<List<CartInfo>> getCheckedItems(){
+        List<CartInfo> cartInfoList = cartService.getCheckedItems();
+        return Result.ok(cartInfoList);
     }
 
 }
