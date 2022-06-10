@@ -1,3 +1,21 @@
+GET http://localhost:13000/rpc/inner/order/updateOrderStatusToPAID/GAMLL-1654741512288-3-32ad7
+
+<> 2022-06-09T103536.200.json
+
+###
+
+GET http://localhost:13000/rpc/inner/order/updateOrderStatusToPAID/GAMLL-1654741512288-3-32ad7
+
+<> 2022-06-09T103211.200.json
+
+###
+
+GET http://localhost:13000/rpc/inner/order/updateOrderStatusToPAID/GAMLL-1654741512288-3-32ad7
+
+<> 2022-06-09T102905.200.json
+
+###
+
 POST http://localhost/api/user/passport/login
 application/json:
 {loginName: "admin", passwd: "111111"}

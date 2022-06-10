@@ -1,5 +1,6 @@
 package com.atguigu.gmall.order.service;
 
+import com.atguigu.gmall.model.enums.ProcessStatus;
 import com.atguigu.gmall.model.order.OrderConfirmVo;
 import com.atguigu.gmall.model.order.OrderInfo;
 import com.atguigu.gmall.model.order.OrderSubmitVo;
@@ -31,4 +32,12 @@ public interface OrderInfoService extends IService<OrderInfo> {
      * @return
      */
     public Long saveOrder(OrderSubmitVo orderSubmitVo);
+
+    void updateStatus(ProcessStatus originStatus, ProcessStatus newStatus, Long orderId, Long userId);
+
+    void updateOrderStatusToPAID(String outTradeNo);
+
+    String getPaymentStatus(String outTradeNo);
+
+    void checkOrderStatusAndUpdateStatus(String outTradeNo);
 }

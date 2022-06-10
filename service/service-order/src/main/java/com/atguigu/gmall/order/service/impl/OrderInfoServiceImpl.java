@@ -1,10 +1,18 @@
 package com.atguigu.gmall.order.service.impl;
+import com.atguigu.gmall.common.util.JSONs;
+import com.atguigu.gmall.feign.pay.PayFeignClient;
 import com.atguigu.gmall.model.enums.OrderStatus;
 import com.atguigu.gmall.model.enums.PaymentWay;
 import com.atguigu.gmall.model.enums.ProcessStatus;
 import com.atguigu.gmall.model.order.OrderDetail;
+import com.atguigu.gmall.model.to.OrderCreateTo;
 import com.atguigu.gmall.order.service.OrderDetailService;
+import com.atguigu.gmall.service.constant.MQConst;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.google.common.collect.Lists;
+
+import java.sql.Wrapper;
 import java.util.Date;
 import com.atguigu.gmall.model.activity.CouponInfo;
 import java.math.BigDecimal;
@@ -29,6 +37,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.atguigu.gmall.order.service.OrderInfoService;
 import com.atguigu.gmall.order.mapper.OrderInfoMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -58,6 +67,8 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
     @Autowired
     private ProductFeignClient productFeignClient;
     @Autowired
+    private PayFeignClient payFeignClient;
+    @Autowired
     private UserFeignClient userFeignClient;
     @Autowired
     private WareFeignClient wareFeignClient;
@@ -68,6 +79,8 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
     @Qualifier("corePool")
     @Autowired
     private ThreadPoolExecutor corePool;
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     @Override
     public OrderConfirmVo getOrderConfirmVo() {
@@ -158,8 +171,6 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
             cartFeignClient.deleteChecked();
         });
 
-        //7.todo:发消息,延迟队列+死信队列,修改30分钟后为支付的订单
-
         //6.返回订单id
         return orderId;
     }
@@ -174,8 +185,56 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
         List<OrderDetail> orderDetails = prepareOrderDetail(orderInfo);
         orderDetailService.saveBatch(orderDetails);
 
+        //7.发消息,延迟队列+死信队列,修改30分钟后为支付的订单
+        OrderCreateTo orderCreateTo = new OrderCreateTo(AuthUtil.getUserAuth().getUserId(), orderInfo.getId());
+        sendOrderCreateMag(orderCreateTo);
 
         return orderInfo.getId();
+    }
+
+    @Override
+    public void updateStatus(ProcessStatus originStatus, ProcessStatus newStatus, Long orderId, Long userId) {
+        OrderInfo orderInfo = new OrderInfo();
+        orderInfo.setOrderStatus(newStatus.name());
+        orderInfo.setProcessStatus(newStatus.name());
+        orderInfo.setId(orderId);
+        orderInfo.setUserId(userId);
+        baseMapper.updateStatus(orderInfo,originStatus.name());
+    }
+
+    @Override
+    public void updateOrderStatusToPAID(String outTradeNo) {
+//        Long userId = AuthUtil.getUserAuth().getUserId();
+        String[] split = outTradeNo.split("-");
+        String userId = split[2];
+        baseMapper.updateOrderStatusToPAID(ProcessStatus.PAID.name(),ProcessStatus.PAID.getOrderStatus().name(),outTradeNo,Long.parseLong(userId));
+    }
+
+    @Override
+    public String getPaymentStatus(String outTradeNo) {
+        String[] split = outTradeNo.split("-");
+        String userId = split[2];
+        LambdaQueryWrapper<OrderInfo> wrapper = Wrappers.lambdaQuery(OrderInfo.class).select(OrderInfo::getProcessStatus)
+                .eq(OrderInfo::getOutTradeNo, outTradeNo)
+                .eq(OrderInfo::getUserId, Long.parseLong(userId));
+        OrderInfo orderInfo = baseMapper.selectOne(wrapper);
+        return orderInfo.getProcessStatus();
+    }
+
+    @Override
+    public void checkOrderStatusAndUpdateStatus(String outTradeNo) {
+        String aliPayStatus = payFeignClient.queryTrade(outTradeNo).getData();
+        String paymentStatus = getPaymentStatus(outTradeNo);
+        if("TRADE_SUCCESS".equals(aliPayStatus) && (paymentStatus.equals(ProcessStatus.UNPAID.name()) || paymentStatus.equals(ProcessStatus.CLOSED.name()))){
+            //改成已支付即可
+            updateOrderStatusToPAID(outTradeNo);
+        }
+    }
+
+
+    private void sendOrderCreateMag(OrderCreateTo orderCreateTo) {
+        String json = JSONs.toStr(orderCreateTo);
+        rabbitTemplate.convertAndSend(MQConst.ORDER_EVENT_EXCHANGE, MQConst.ORDER_CREATE_BINDING_KEY, json);
     }
 
     private List<OrderDetail> prepareOrderDetail(OrderInfo orderInfo) {
@@ -220,7 +279,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
         long timeStamp = System.currentTimeMillis();
         String uuid = UUID.randomUUID().toString().substring(0, 5);
         //对外交易号
-        orderInfo.setOutTradeNo("GAMLL-" + timeStamp + "-" + uuid);
+        orderInfo.setOutTradeNo("GAMLL-" + timeStamp + "-"+ AuthUtil.getUserAuth().getUserId() + "-" + uuid);
         //交易体: 所有购买的商品名
         String tradeBody = orderSubmitVo.getOrderDetailList().stream()
                 .map(CartInfoForOrderVo::getSkuName)

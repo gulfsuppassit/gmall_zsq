@@ -7,29 +7,21 @@
     <list default="true" id="f111c4ac-8ad9-489b-8a90-efd2bd79e97e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/result/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/result/ResultCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-feign-client/src/main/java/com/atguigu/gmall/feign/cart/CartFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-feign-client/src/main/java/com/atguigu/gmall/feign/cart/CartFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/constant/RedisConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/constant/RedisConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/model/order/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/model/order/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/util/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-feign-client/src/main/java/com/atguigu/gmall/feign/order/OrderFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-feign-client/src/main/java/com/atguigu/gmall/feign/order/OrderFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-cart/src/main/java/com/atguigu/gmall/cart/rpc/CartRpcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-cart/src/main/java/com/atguigu/gmall/cart/rpc/CartRpcController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-cart/src/main/java/com/atguigu/gmall/cart/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-cart/src/main/java/com/atguigu/gmall/cart/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-cart/src/main/java/com/atguigu/gmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-cart/src/main/java/com/atguigu/gmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/mapper/OrderInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/mapper/OrderInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/rpc/OrderRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/rpc/OrderRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/service/OrderInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/service/impl/OrderInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/application-sharding.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/application-sharding.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/test/java/com/atguigu/gmall/order/OrderInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/test/java/com/atguigu/gmall/order/OrderInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/WebAllApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/WebAllApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/interceptor/UserIdRequestInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/service/interceptor/UserIdRequestInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/web-all/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/order/trade.html" beforeDir="false" afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/order/trade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" afterDir="false" />
     </list>
     <list id="9d0c2651-94d6-423d-8e72-ee323b8c905d" name="getMethodAnnotation" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,8 +155,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../guigu/第五阶段/尚品汇/视屏/day15-订单/笔记/gmall-parent" />
-    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/model/payment" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -174,6 +167,7 @@
       <recent name="com.atguigu.gmall.product.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\gmall-parent\model\src\main\java\com\atguigu\gmall\model\payment" />
       <recent name="D:\IdeaProjects\gmall-parent\service\service-order\src\main\resources" />
       <recent name="D:\IdeaProjects\gmall-parent\service\service-user\src\main\resources" />
       <recent name="D:\IdeaProjects\gmall-parent\service\service-product\src\main\resources\mapper" />
@@ -204,10 +198,15 @@
       <toRun name="ItemApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ListApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="OrderApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="PayApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ProductApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="ServerGatewayApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ServiceWareApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="UserApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="WebAllApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="ESTest.paramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -342,6 +341,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="service-pay" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gmall.pay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.pay.PayApplication" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="service-product" />
       <extension name="coverage">
@@ -374,7 +387,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+    <configuration name="ServiceWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ware-manage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.ware.ServiceWareApplication" />
       <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
@@ -420,6 +433,7 @@
     </configuration>
     <list>
       <item itemvalue="Compound.mall" />
+      <item itemvalue="HTTP Request.generated-requests | #7" />
       <item itemvalue="JUnit.ESTest.test01" />
       <item itemvalue="JUnit.ESTest.paramTest" />
       <item itemvalue="JUnit.test.test" />
@@ -433,10 +447,11 @@
       <item itemvalue="Spring Boot.UserApplication" />
       <item itemvalue="Spring Boot.OrderApplication" />
       <item itemvalue="Spring Boot.ServiceWareApplication" />
+      <item itemvalue="Spring Boot.PayApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceWareApplication" />
+        <item itemvalue="HTTP Request.generated-requests | #7" />
         <item itemvalue="JUnit.OrderInfoTest.addTest" />
         <item itemvalue="JUnit.test.test" />
         <item itemvalue="JUnit.ESTest.paramTest" />
@@ -518,7 +533,13 @@
       <workItem from="1654425723330" duration="4000" />
       <workItem from="1654477335536" duration="23373000" />
       <workItem from="1654522294077" duration="2000" />
-      <workItem from="1654560980721" duration="19439000" />
+      <workItem from="1654560980721" duration="36187000" />
+      <workItem from="1654650571914" duration="4103000" />
+      <workItem from="1654674044407" duration="888000" />
+      <workItem from="1654675634113" duration="323000" />
+      <workItem from="1654676164567" duration="10209000" />
+      <workItem from="1654691989793" duration="3046000" />
+      <workItem from="1654737149841" duration="14102000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1652789462472</created>
@@ -618,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654477427802</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="第10次提交:完成订单服务之结算订单,提交订单,有待改进">
+      <created>1654588628709</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1654588628709</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +670,8 @@
     <MESSAGE value="第7次提交:完成list.gmall.com页面展示" />
     <MESSAGE value="第8次提交:完成登录和简单鉴权" />
     <MESSAGE value="第9次提交:完成购物车微服务和订单服务简单配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="第9次提交:完成购物车微服务和订单服务简单配置" />
+    <MESSAGE value="第10次提交:完成订单服务之结算订单,提交订单,有待改进" />
+    <option name="LAST_COMMIT_MESSAGE" value="第10次提交:完成订单服务之结算订单,提交订单,有待改进" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -689,7 +718,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/service/impl/OrderInfoServiceImpl.java</url>
-          <line>277</line>
+          <line>336</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -701,6 +730,21 @@
           <url>file://$PROJECT_DIR$/service/service-cart/src/main/java/com/atguigu/gmall/cart/service/impl/CartServiceImpl.java</url>
           <line>91</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-pay/src/main/java/com/atguigu/gmall/pay/rpc/alipay/AliPayRpcController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-pay/src/main/java/com/atguigu/gmall/pay/service/impl/AliPayServiceImpl.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-order/src/main/java/com/atguigu/gmall/order/service/impl/OrderInfoServiceImpl.java</url>
+          <line>225</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

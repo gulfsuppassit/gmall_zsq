@@ -70,7 +70,6 @@ spring:
           standard: # 用于单分片键的标准分片场景
             shardingColumn: user_id # 分片列名称
             shardingAlgorithmName: user-id-db-shard # 分片算法名称
-
         tables:
           order_info:
             actualDataNodes: write0$->{0..1}.order_info_$->{1..3} # 由数据源名 + 表名组成（参考 Inline 语法规则）
@@ -79,6 +78,9 @@ spring:
               standard: # 用于单分片键的标准分片场景
                 shardingColumn: user_id # 分片列名称
                 shardingAlgorithmName: user-id-table-shard # 分片算法名称
+            keyGenerateStrategy: # 分布式序列策略
+              column: id # 自增列名称，缺省表示不使用自增主键生成器
+              keyGeneratorName: order-id-snow # 分布式序列算法名称
 
           order_detail:
             actualDataNodes: write0$->{0..1}.order_detail_$->{1..3} # 由数据源名 + 表名组成（参考 Inline 语法规则）
@@ -87,6 +89,9 @@ spring:
               standard: # 用于单分片键的标准分片场景
                 shardingColumn: user_id # 分片列名称
                 shardingAlgorithmName: user-id-detail-table-shard # 分片算法名称
+            keyGenerateStrategy: # 分布式序列策略
+              column: id # 自增列名称，缺省表示不使用自增主键生成器
+              keyGeneratorName: order-id-snow # 分布式序列算法名称
 
         shardingAlgorithms:
           user-id-db-shard:
@@ -101,7 +106,13 @@ spring:
             type: INLINE  # 分片算法类型
             props: # 分片算法属性配置
               algorithm-expression: order_detail_$->{user_id % 3 + 1}
-
+        binding-tables:
+          - order_info
+          - order_detail
+        key-generators:
+          order-id-snow:
+            type: SNOWFLAKE
+#          props:
 
 
     props:

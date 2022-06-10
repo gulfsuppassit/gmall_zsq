@@ -23,7 +23,7 @@ public class OrderController {
     public Result submitOrder(@RequestParam("tradeNo") String tradeNo,
                               @RequestBody OrderSubmitVo orderSubmitVo) {
         Long orderId = orderInfoService.submitOrder(tradeNo, orderSubmitVo);
-        return Result.ok(orderId);
+        return Result.ok(orderId.toString());
     }
 
 }

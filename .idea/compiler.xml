@@ -14,6 +14,7 @@
         <module name="service-list" />
         <module name="service-util" />
         <module name="service-order" />
+        <module name="service-pay" />
         <module name="web-all" />
         <module name="gmall-cache-starter" />
         <module name="service-product" />
@@ -37,6 +38,7 @@
       <module name="service-item" options="-parameters" />
       <module name="service-list" options="-parameters" />
       <module name="service-order" options="-parameters" />
+      <module name="service-pay" options="-parameters" />
       <module name="service-product" options="-parameters" />
       <module name="service-user" options="-parameters" />
       <module name="service-util" options="-parameters" />
